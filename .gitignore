@@ -1,0 +1,30 @@
+/Public
+/Pictures
+/Music
+/Movies
+/Library
+/Google 드라이브
+/Documents
+/Downloads
+/Desktop
+/Applications
+/.Trash
+/Applications (Parallels)
+/.android
+/.bash_sessions
+/.cache
+/.gradle
+/.m2
+/.oracle_jre_usage
+/.vim
+/.bash_history
+/.CFUserTextEncoding
+/.dbshell
+/.gitconfig
+/.hgignore_global
+/.viminfo
+/.zsh-update
+/.zsh_history
+/.zshrc.pre-oh-my-zsh
+/.zcompdump-*
+/src
