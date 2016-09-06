@@ -12,7 +12,7 @@ export APPS_HOME=${HOME}/apps
 # for Java
 #export JAVA_HOME=/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
 #export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home
 export PATH=${JAVA_HOME}/bin:${PATH}
 export CLASSPATH=.:${JAVA_HOME}/lib/tools.jar
 export _JAVA_OPTIONS="-Dfiles.encoding=UTF-8"
