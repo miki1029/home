@@ -1,0 +1,879 @@
+Wed Jan 27 16:59:21 KST 2016 Starting master on LinePlusui-MacBook-Pro.local
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+file size               (blocks, -f) unlimited
+max locked memory       (kbytes, -l) unlimited
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 2560
+pipe size            (512 bytes, -p) 1
+stack size              (kbytes, -s) 8192
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 709
+virtual memory          (kbytes, -v) unlimited
+2016-01-27 16:59:21,815 INFO  [main] util.VersionInfo: HBase 1.1.2
+2016-01-27 16:59:21,815 INFO  [main] util.VersionInfo: Source code repository git://hw11397.local/Volumes/hbase-1.1.2RC2/hbase revision=cc2b70cf03e3378800661ec5cab11eb43fafe0fc
+2016-01-27 16:59:21,815 INFO  [main] util.VersionInfo: Compiled by ndimiduk on Wed Aug 26 20:11:27 PDT 2015
+2016-01-27 16:59:21,815 INFO  [main] util.VersionInfo: From source with checksum 73da41f3d1b867b7aba6166c77fafc17
+2016-01-27 16:59:22,008 INFO  [main] master.HMasterCommandLine: Starting a zookeeper cluster
+2016-01-27 16:59:22,302 INFO  [main] server.ZooKeeperServer: Server environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-01-27 16:59:22,302 INFO  [main] server.ZooKeeperServer: Server environment:host.name=192.168.1.124
+2016-01-27 16:59:22,302 INFO  [main] server.ZooKeeperServer: Server environment:java.version=1.8.0_65
+2016-01-27 16:59:22,302 INFO  [main] server.ZooKeeperServer: Server environment:java.vendor=Oracle Corporation
+2016-01-27 16:59:22,302 INFO  [main] server.ZooKeeperServer: Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre
+2016-01-27 16:59:22,302 INFO  [main] server.ZooKeeperServer: Server environment:java.class.path=/Users/lineplus/app/hbase/bin/../conf:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/lib/tools.jar:/Users/lineplus/app/hbase/bin/..:/Users/lineplus/app/hbase/bin/../lib/activation-1.1.jar:/Users/lineplus/app/hbase/bin/../lib/aopalliance-1.0.jar:/Users/lineplus/app/hbase/bin/../lib/apacheds-i18n-2.0.0-M15.jar:/Users/lineplus/app/hbase/bin/../lib/apacheds-kerberos-codec-2.0.0-M15.jar:/Users/lineplus/app/hbase/bin/../lib/api-asn1-api-1.0.0-M20.jar:/Users/lineplus/app/hbase/bin/../lib/api-util-1.0.0-M20.jar:/Users/lineplus/app/hbase/bin/../lib/asm-3.1.jar:/Users/lineplus/app/hbase/bin/../lib/avro-1.7.4.jar:/Users/lineplus/app/hbase/bin/../lib/commons-beanutils-1.7.0.jar:/Users/lineplus/app/hbase/bin/../lib/commons-beanutils-core-1.8.0.jar:/Users/lineplus/app/hbase/bin/../lib/commons-cli-1.2.jar:/Users/lineplus/app/hbase/bin/../lib/commons-codec-1.9.jar:/Users/lineplus/app/hbase/bin/../lib/commons-collections-3.2.1.jar:/Users/lineplus/app/hbase/bin/../lib/commons-compress-1.4.1.jar:/Users/lineplus/app/hbase/bin/../lib/commons-configuration-1.6.jar:/Users/lineplus/app/hbase/bin/../lib/commons-daemon-1.0.13.jar:/Users/lineplus/app/hbase/bin/../lib/commons-digester-1.8.jar:/Users/lineplus/app/hbase/bin/../lib/commons-el-1.0.jar:/Users/lineplus/app/hbase/bin/../lib/commons-httpclient-3.1.jar:/Users/lineplus/app/hbase/bin/../lib/commons-io-2.4.jar:/Users/lineplus/app/hbase/bin/../lib/commons-lang-2.6.jar:/Users/lineplus/app/hbase/bin/../lib/commons-logging-1.2.jar:/Users/lineplus/app/hbase/bin/../lib/commons-math-2.2.jar:/Users/lineplus/app/hbase/bin/../lib/commons-math3-3.1.1.jar:/Users/lineplus/app/hbase/bin/../lib/commons-net-3.1.jar:/Users/lineplus/app/hbase/bin/../lib/disruptor-3.3.0.jar:/Users/lineplus/app/hbase/bin/../lib/findbugs-annotations-1.3.9-1.jar:/Users/lineplus/app/hbase/bin/../lib/guava-12.0.1.jar:/Users/lineplus/app/hbase/bin/../lib/guice-3.0.jar:/Users/lineplus/app/hbase/bin/../lib/guice-servlet-3.0.jar:/Users/lineplus/app/hbase/bin/../lib/hadoop-annotations-2.5.1.jar:/Users/lineplus/app/hbase/bin/../lib/hadoop-auth-2.5.1.jar:/Users/lineplus/app/hbase/bin/../lib/hadoop-client-2.5.1.jar:/Users/lineplus/app/hbase/bin/../lib/hadoop-common-2.5.1.jar:/Users/lineplus/app/hbase/bin/../lib/hadoop-hdfs-2.5.1.jar:/Users/lineplus/app/hbase/bin/../lib/hadoop-mapreduce-client-app-2.5.1.jar:/Users/lineplus/app/hbase/bin/../lib/hadoop-mapreduce-client-common-2.5.1.jar:/Users/lineplus/app/hbase/bin/../lib/hadoop-mapreduce-client-core-2.5.1.jar:/Users/lineplus/app/hbase/bin/../lib/hadoop-mapreduce-client-jobclient-2.5.1.jar:/Users/lineplus/app/hbase/bin/../lib/hadoop-mapreduce-client-shuffle-2.5.1.jar:/Users/lineplus/app/hbase/bin/../lib/hadoop-yarn-api-2.5.1.jar:/Users/lineplus/app/hbase/bin/../lib/hadoop-yarn-client-2.5.1.jar:/Users/lineplus/app/hbase/bin/../lib/hadoop-yarn-common-2.5.1.jar:/Users/lineplus/app/hbase/bin/../lib/hadoop-yarn-server-common-2.5.1.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-annotations-1.1.2-tests.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-annotations-1.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-client-1.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-common-1.1.2-tests.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-common-1.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-examples-1.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-hadoop-compat-1.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-hadoop2-compat-1.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-it-1.1.2-tests.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-it-1.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-prefix-tree-1.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-procedure-1.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-protocol-1.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-resource-bundle-1.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-rest-1.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-server-1.1.2-tests.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-server-1.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-shell-1.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-thrift-1.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/htrace-core-3.1.0-incubating.jar:/Users/lineplus/app/hbase/bin/../lib/httpclient-4.2.5.jar:/Users/lineplus/app/hbase/bin/../lib/httpcore-4.1.3.jar:/Users/lineplus/app/hbase/bin/../lib/jackson-core-asl-1.9.13.jar:/Users/lineplus/app/hbase/bin/../lib/jackson-jaxrs-1.9.13.jar:/Users/lineplus/app/hbase/bin/../lib/jackson-mapper-asl-1.9.13.jar:/Users/lineplus/app/hbase/bin/../lib/jackson-xc-1.9.13.jar:/Users/lineplus/app/hbase/bin/../lib/jamon-runtime-2.3.1.jar:/Users/lineplus/app/hbase/bin/../lib/jasper-compiler-5.5.23.jar:/Users/lineplus/app/hbase/bin/../lib/jasper-runtime-5.5.23.jar:/Users/lineplus/app/hbase/bin/../lib/java-xmlbuilder-0.4.jar:/Users/lineplus/app/hbase/bin/../lib/javax.inject-1.jar:/Users/lineplus/app/hbase/bin/../lib/jaxb-api-2.2.2.jar:/Users/lineplus/app/hbase/bin/../lib/jaxb-impl-2.2.3-1.jar:/Users/lineplus/app/hbase/bin/../lib/jcodings-1.0.8.jar:/Users/lineplus/app/hbase/bin/../lib/jersey-client-1.9.jar:/Users/lineplus/app/hbase/bin/../lib/jersey-core-1.9.jar:/Users/lineplus/app/hbase/bin/../lib/jersey-guice-1.9.jar:/Users/lineplus/app/hbase/bin/../lib/jersey-json-1.9.jar:/Users/lineplus/app/hbase/bin/../lib/jersey-server-1.9.jar:/Users/lineplus/app/hbase/bin/../lib/jets3t-0.9.0.jar:/Users/lineplus/app/hbase/bin/../lib/jettison-1.3.3.jar:/Users/lineplus/app/hbase/bin/../lib/jetty-6.1.26.jar:/Users/lineplus/app/hbase/bin/../lib/jetty-sslengine-6.1.26.jar:/Users/lineplus/app/hbase/bin/../lib/jetty-util-6.1.26.jar:/Users/lineplus/app/hbase/bin/../lib/joni-2.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/jruby-complete-1.6.8.jar:/Users/lineplus/app/hbase/bin/../lib/jsch-0.1.42.jar:/Users/lineplus/app/hbase/bin/../lib/jsp-2.1-6.1.14.jar:/Users/lineplus/app/hbase/bin/../lib/jsp-api-2.1-6.1.14.jar:/Users/lineplus/app/hbase/bin/../lib/jsr305-1.3.9.jar:/Users/lineplus/app/hbase/bin/../lib/junit-4.11.jar:/Users/lineplus/app/hbase/bin/../lib/leveldbjni-all-1.8.jar:/Users/lineplus/app/hbase/bin/../lib/libthrift-0.9.0.jar:/Users/lineplus/app/hbase/bin/../lib/log4j-1.2.17.jar:/Users/lineplus/app/hbase/bin/../lib/metrics-core-2.2.0.jar:/Users/lineplus/app/hbase/bin/../lib/netty-3.2.4.Final.jar:/Users/lineplus/app/hbase/bin/../lib/netty-all-4.0.23.Final.jar:/Users/lineplus/app/hbase/bin/../lib/paranamer-2.3.jar:/Users/lineplus/app/hbase/bin/../lib/protobuf-java-2.5.0.jar:/Users/lineplus/app/hbase/bin/../lib/servlet-api-2.5-6.1.14.jar:/Users/lineplus/app/hbase/bin/../lib/servlet-api-2.5.jar:/Users/lineplus/app/hbase/bin/../lib/slf4j-api-1.7.7.jar:/Users/lineplus/app/hbase/bin/../lib/slf4j-log4j12-1.7.5.jar:/Users/lineplus/app/hbase/bin/../lib/snappy-java-1.0.4.1.jar:/Users/lineplus/app/hbase/bin/../lib/spymemcached-2.11.6.jar:/Users/lineplus/app/hbase/bin/../lib/xmlenc-0.52.jar:/Users/lineplus/app/hbase/bin/../lib/xz-1.0.jar:/Users/lineplus/app/hbase/bin/../lib/zookeeper-3.4.6.jar:
+2016-01-27 16:59:22,302 INFO  [main] server.ZooKeeperServer: Server environment:java.library.path=/Users/lineplus/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-01-27 16:59:22,302 INFO  [main] server.ZooKeeperServer: Server environment:java.io.tmpdir=/var/folders/d1/dh_9y0zd7mn2x5tydj9pv0w40000gn/T/
+2016-01-27 16:59:22,302 INFO  [main] server.ZooKeeperServer: Server environment:java.compiler=<NA>
+2016-01-27 16:59:22,302 INFO  [main] server.ZooKeeperServer: Server environment:os.name=Mac OS X
+2016-01-27 16:59:22,302 INFO  [main] server.ZooKeeperServer: Server environment:os.arch=x86_64
+2016-01-27 16:59:22,302 INFO  [main] server.ZooKeeperServer: Server environment:os.version=10.11.3
+2016-01-27 16:59:22,302 INFO  [main] server.ZooKeeperServer: Server environment:user.name=lineplus
+2016-01-27 16:59:22,302 INFO  [main] server.ZooKeeperServer: Server environment:user.home=/Users/lineplus
+2016-01-27 16:59:22,302 INFO  [main] server.ZooKeeperServer: Server environment:user.dir=/Users/lineplus/app/hbase-1.1.2
+2016-01-27 16:59:22,320 INFO  [main] server.ZooKeeperServer: Created server with tickTime 2000 minSessionTimeout 4000 maxSessionTimeout 40000 datadir /Users/lineplus/zookeeper/zookeeper_0/version-2 snapdir /Users/lineplus/zookeeper/zookeeper_0/version-2
+2016-01-27 16:59:22,338 INFO  [main] server.NIOServerCnxnFactory: binding to port 0.0.0.0/0.0.0.0:2181
+2016-01-27 16:59:22,406 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:53764
+2016-01-27 16:59:22,411 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Processing stat command from /127.0.0.1:53764
+2016-01-27 16:59:22,414 INFO  [Thread-1] server.NIOServerCnxn: Stat command output
+2016-01-27 16:59:22,415 INFO  [Thread-1] server.NIOServerCnxn: Closed socket connection for client /127.0.0.1:53764 (no session established for client)
+2016-01-27 16:59:22,416 INFO  [main] zookeeper.MiniZooKeeperCluster: Started MiniZooKeeperCluster and ran successful 'stat' on client port=2181
+2016-01-27 16:59:22,416 INFO  [main] master.HMasterCommandLine: Starting up instance of localHBaseCluster; master=1, regionserversCount=1
+2016-01-27 16:59:22,590 WARN  [main] util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2016-01-27 16:59:22,788 INFO  [main] regionserver.RSRpcServices: master//192.168.1.124:0 server-side HConnection retries=350
+2016-01-27 16:59:22,919 INFO  [main] ipc.SimpleRpcScheduler: Using deadline as user call queue, count=3
+2016-01-27 16:59:22,931 INFO  [main] ipc.RpcServer: master//192.168.1.124:0: started 10 reader(s).
+2016-01-27 16:59:22,979 INFO  [main] impl.MetricsConfig: loaded properties from hadoop-metrics2-hbase.properties
+2016-01-27 16:59:22,993 INFO  [main] impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2016-01-27 16:59:22,994 INFO  [main] impl.MetricsSystemImpl: HBase metrics system started
+2016-01-27 16:59:23,192 INFO  [main] zookeeper.RecoverableZooKeeper: Process identifier=master:53765 connecting to ZooKeeper ensemble=localhost:2181
+2016-01-27 16:59:23,196 INFO  [main] zookeeper.ZooKeeper: Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-01-27 16:59:23,196 INFO  [main] zookeeper.ZooKeeper: Client environment:host.name=192.168.1.124
+2016-01-27 16:59:23,196 INFO  [main] zookeeper.ZooKeeper: Client environment:java.version=1.8.0_65
+2016-01-27 16:59:23,197 INFO  [main] zookeeper.ZooKeeper: Client environment:java.vendor=Oracle Corporation
+2016-01-27 16:59:23,197 INFO  [main] zookeeper.ZooKeeper: Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre
+2016-01-27 16:59:23,197 INFO  [main] zookeeper.ZooKeeper: Client environment:java.class.path=/Users/lineplus/app/hbase/bin/../conf:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/lib/tools.jar:/Users/lineplus/app/hbase/bin/..:/Users/lineplus/app/hbase/bin/../lib/activation-1.1.jar:/Users/lineplus/app/hbase/bin/../lib/aopalliance-1.0.jar:/Users/lineplus/app/hbase/bin/../lib/apacheds-i18n-2.0.0-M15.jar:/Users/lineplus/app/hbase/bin/../lib/apacheds-kerberos-codec-2.0.0-M15.jar:/Users/lineplus/app/hbase/bin/../lib/api-asn1-api-1.0.0-M20.jar:/Users/lineplus/app/hbase/bin/../lib/api-util-1.0.0-M20.jar:/Users/lineplus/app/hbase/bin/../lib/asm-3.1.jar:/Users/lineplus/app/hbase/bin/../lib/avro-1.7.4.jar:/Users/lineplus/app/hbase/bin/../lib/commons-beanutils-1.7.0.jar:/Users/lineplus/app/hbase/bin/../lib/commons-beanutils-core-1.8.0.jar:/Users/lineplus/app/hbase/bin/../lib/commons-cli-1.2.jar:/Users/lineplus/app/hbase/bin/../lib/commons-codec-1.9.jar:/Users/lineplus/app/hbase/bin/../lib/commons-collections-3.2.1.jar:/Users/lineplus/app/hbase/bin/../lib/commons-compress-1.4.1.jar:/Users/lineplus/app/hbase/bin/../lib/commons-configuration-1.6.jar:/Users/lineplus/app/hbase/bin/../lib/commons-daemon-1.0.13.jar:/Users/lineplus/app/hbase/bin/../lib/commons-digester-1.8.jar:/Users/lineplus/app/hbase/bin/../lib/commons-el-1.0.jar:/Users/lineplus/app/hbase/bin/../lib/commons-httpclient-3.1.jar:/Users/lineplus/app/hbase/bin/../lib/commons-io-2.4.jar:/Users/lineplus/app/hbase/bin/../lib/commons-lang-2.6.jar:/Users/lineplus/app/hbase/bin/../lib/commons-logging-1.2.jar:/Users/lineplus/app/hbase/bin/../lib/commons-math-2.2.jar:/Users/lineplus/app/hbase/bin/../lib/commons-math3-3.1.1.jar:/Users/lineplus/app/hbase/bin/../lib/commons-net-3.1.jar:/Users/lineplus/app/hbase/bin/../lib/disruptor-3.3.0.jar:/Users/lineplus/app/hbase/bin/../lib/findbugs-annotations-1.3.9-1.jar:/Users/lineplus/app/hbase/bin/../lib/guava-12.0.1.jar:/Users/lineplus/app/hbase/bin/../lib/guice-3.0.jar:/Users/lineplus/app/hbase/bin/../lib/guice-servlet-3.0.jar:/Users/lineplus/app/hbase/bin/../lib/hadoop-annotations-2.5.1.jar:/Users/lineplus/app/hbase/bin/../lib/hadoop-auth-2.5.1.jar:/Users/lineplus/app/hbase/bin/../lib/hadoop-client-2.5.1.jar:/Users/lineplus/app/hbase/bin/../lib/hadoop-common-2.5.1.jar:/Users/lineplus/app/hbase/bin/../lib/hadoop-hdfs-2.5.1.jar:/Users/lineplus/app/hbase/bin/../lib/hadoop-mapreduce-client-app-2.5.1.jar:/Users/lineplus/app/hbase/bin/../lib/hadoop-mapreduce-client-common-2.5.1.jar:/Users/lineplus/app/hbase/bin/../lib/hadoop-mapreduce-client-core-2.5.1.jar:/Users/lineplus/app/hbase/bin/../lib/hadoop-mapreduce-client-jobclient-2.5.1.jar:/Users/lineplus/app/hbase/bin/../lib/hadoop-mapreduce-client-shuffle-2.5.1.jar:/Users/lineplus/app/hbase/bin/../lib/hadoop-yarn-api-2.5.1.jar:/Users/lineplus/app/hbase/bin/../lib/hadoop-yarn-client-2.5.1.jar:/Users/lineplus/app/hbase/bin/../lib/hadoop-yarn-common-2.5.1.jar:/Users/lineplus/app/hbase/bin/../lib/hadoop-yarn-server-common-2.5.1.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-annotations-1.1.2-tests.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-annotations-1.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-client-1.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-common-1.1.2-tests.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-common-1.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-examples-1.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-hadoop-compat-1.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-hadoop2-compat-1.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-it-1.1.2-tests.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-it-1.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-prefix-tree-1.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-procedure-1.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-protocol-1.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-resource-bundle-1.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-rest-1.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-server-1.1.2-tests.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-server-1.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-shell-1.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/hbase-thrift-1.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/htrace-core-3.1.0-incubating.jar:/Users/lineplus/app/hbase/bin/../lib/httpclient-4.2.5.jar:/Users/lineplus/app/hbase/bin/../lib/httpcore-4.1.3.jar:/Users/lineplus/app/hbase/bin/../lib/jackson-core-asl-1.9.13.jar:/Users/lineplus/app/hbase/bin/../lib/jackson-jaxrs-1.9.13.jar:/Users/lineplus/app/hbase/bin/../lib/jackson-mapper-asl-1.9.13.jar:/Users/lineplus/app/hbase/bin/../lib/jackson-xc-1.9.13.jar:/Users/lineplus/app/hbase/bin/../lib/jamon-runtime-2.3.1.jar:/Users/lineplus/app/hbase/bin/../lib/jasper-compiler-5.5.23.jar:/Users/lineplus/app/hbase/bin/../lib/jasper-runtime-5.5.23.jar:/Users/lineplus/app/hbase/bin/../lib/java-xmlbuilder-0.4.jar:/Users/lineplus/app/hbase/bin/../lib/javax.inject-1.jar:/Users/lineplus/app/hbase/bin/../lib/jaxb-api-2.2.2.jar:/Users/lineplus/app/hbase/bin/../lib/jaxb-impl-2.2.3-1.jar:/Users/lineplus/app/hbase/bin/../lib/jcodings-1.0.8.jar:/Users/lineplus/app/hbase/bin/../lib/jersey-client-1.9.jar:/Users/lineplus/app/hbase/bin/../lib/jersey-core-1.9.jar:/Users/lineplus/app/hbase/bin/../lib/jersey-guice-1.9.jar:/Users/lineplus/app/hbase/bin/../lib/jersey-json-1.9.jar:/Users/lineplus/app/hbase/bin/../lib/jersey-server-1.9.jar:/Users/lineplus/app/hbase/bin/../lib/jets3t-0.9.0.jar:/Users/lineplus/app/hbase/bin/../lib/jettison-1.3.3.jar:/Users/lineplus/app/hbase/bin/../lib/jetty-6.1.26.jar:/Users/lineplus/app/hbase/bin/../lib/jetty-sslengine-6.1.26.jar:/Users/lineplus/app/hbase/bin/../lib/jetty-util-6.1.26.jar:/Users/lineplus/app/hbase/bin/../lib/joni-2.1.2.jar:/Users/lineplus/app/hbase/bin/../lib/jruby-complete-1.6.8.jar:/Users/lineplus/app/hbase/bin/../lib/jsch-0.1.42.jar:/Users/lineplus/app/hbase/bin/../lib/jsp-2.1-6.1.14.jar:/Users/lineplus/app/hbase/bin/../lib/jsp-api-2.1-6.1.14.jar:/Users/lineplus/app/hbase/bin/../lib/jsr305-1.3.9.jar:/Users/lineplus/app/hbase/bin/../lib/junit-4.11.jar:/Users/lineplus/app/hbase/bin/../lib/leveldbjni-all-1.8.jar:/Users/lineplus/app/hbase/bin/../lib/libthrift-0.9.0.jar:/Users/lineplus/app/hbase/bin/../lib/log4j-1.2.17.jar:/Users/lineplus/app/hbase/bin/../lib/metrics-core-2.2.0.jar:/Users/lineplus/app/hbase/bin/../lib/netty-3.2.4.Final.jar:/Users/lineplus/app/hbase/bin/../lib/netty-all-4.0.23.Final.jar:/Users/lineplus/app/hbase/bin/../lib/paranamer-2.3.jar:/Users/lineplus/app/hbase/bin/../lib/protobuf-java-2.5.0.jar:/Users/lineplus/app/hbase/bin/../lib/servlet-api-2.5-6.1.14.jar:/Users/lineplus/app/hbase/bin/../lib/servlet-api-2.5.jar:/Users/lineplus/app/hbase/bin/../lib/slf4j-api-1.7.7.jar:/Users/lineplus/app/hbase/bin/../lib/slf4j-log4j12-1.7.5.jar:/Users/lineplus/app/hbase/bin/../lib/snappy-java-1.0.4.1.jar:/Users/lineplus/app/hbase/bin/../lib/spymemcached-2.11.6.jar:/Users/lineplus/app/hbase/bin/../lib/xmlenc-0.52.jar:/Users/lineplus/app/hbase/bin/../lib/xz-1.0.jar:/Users/lineplus/app/hbase/bin/../lib/zookeeper-3.4.6.jar:
+2016-01-27 16:59:23,197 INFO  [main] zookeeper.ZooKeeper: Client environment:java.library.path=/Users/lineplus/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-01-27 16:59:23,197 INFO  [main] zookeeper.ZooKeeper: Client environment:java.io.tmpdir=/var/folders/d1/dh_9y0zd7mn2x5tydj9pv0w40000gn/T/
+2016-01-27 16:59:23,197 INFO  [main] zookeeper.ZooKeeper: Client environment:java.compiler=<NA>
+2016-01-27 16:59:23,197 INFO  [main] zookeeper.ZooKeeper: Client environment:os.name=Mac OS X
+2016-01-27 16:59:23,197 INFO  [main] zookeeper.ZooKeeper: Client environment:os.arch=x86_64
+2016-01-27 16:59:23,197 INFO  [main] zookeeper.ZooKeeper: Client environment:os.version=10.11.3
+2016-01-27 16:59:23,197 INFO  [main] zookeeper.ZooKeeper: Client environment:user.name=lineplus
+2016-01-27 16:59:23,197 INFO  [main] zookeeper.ZooKeeper: Client environment:user.home=/Users/lineplus
+2016-01-27 16:59:23,197 INFO  [main] zookeeper.ZooKeeper: Client environment:user.dir=/Users/lineplus/app/hbase-1.1.2
+2016-01-27 16:59:23,197 INFO  [main] zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:2181 sessionTimeout=10000 watcher=master:537650x0, quorum=localhost:2181, baseZNode=/hbase
+2016-01-27 16:59:23,234 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-01-27 16:59:23,235 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /0:0:0:0:0:0:0:1:53829
+2016-01-27 16:59:23,235 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-01-27 16:59:23,238 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /0:0:0:0:0:0:0:1:53829
+2016-01-27 16:59:23,240 INFO  [SyncThread:0] persistence.FileTxnLog: Creating new log file: log.1
+2016-01-27 16:59:23,249 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x152821814e90000 with negotiated timeout 10000 for client /0:0:0:0:0:0:0:1:53829
+2016-01-27 16:59:23,249 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x152821814e90000, negotiated timeout = 10000
+2016-01-27 16:59:23,284 INFO  [RpcServer.responder] ipc.RpcServer: RpcServer.responder: starting
+2016-01-27 16:59:23,284 INFO  [RpcServer.listener,port=53765] ipc.RpcServer: RpcServer.listener,port=53765: starting
+2016-01-27 16:59:23,347 INFO  [main] mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2016-01-27 16:59:23,350 INFO  [main] http.HttpRequestLog: Http request log for http.requests.master is not defined
+2016-01-27 16:59:23,359 INFO  [main] http.HttpServer: Added global filter 'safety' (class=org.apache.hadoop.hbase.http.HttpServer$QuotingInputFilter)
+2016-01-27 16:59:23,361 INFO  [main] http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.hbase.http.lib.StaticUserWebFilter$StaticUserFilter) to context master
+2016-01-27 16:59:23,361 INFO  [main] http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.hbase.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2016-01-27 16:59:23,361 INFO  [main] http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.hbase.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2016-01-27 16:59:23,374 INFO  [main] http.HttpServer: Jetty bound to port 16010
+2016-01-27 16:59:23,374 INFO  [main] mortbay.log: jetty-6.1.26
+2016-01-27 16:59:23,574 INFO  [main] mortbay.log: Started SelectChannelConnector@0.0.0.0:16010
+2016-01-27 16:59:23,580 INFO  [main] master.HMaster: hbase.rootdir=file:/Users/lineplus/hbase, hbase.cluster.distributed=false
+2016-01-27 16:59:23,595 INFO  [main] master.HMaster: Adding backup master ZNode /hbase/backup-masters/192.168.1.124,53765,1453881563009
+2016-01-27 16:59:23,647 INFO  [192.168.1.124:53765.activeMasterManager] master.ActiveMasterManager: Deleting ZNode for /hbase/backup-masters/192.168.1.124,53765,1453881563009 from backup master directory
+2016-01-27 16:59:23,651 INFO  [192.168.1.124:53765.activeMasterManager] master.ActiveMasterManager: Registered Active Master=192.168.1.124,53765,1453881563009
+2016-01-27 16:59:23,653 INFO  [main] regionserver.RSRpcServices: regionserver//192.168.1.124:0 server-side HConnection retries=350
+2016-01-27 16:59:23,653 INFO  [main] ipc.SimpleRpcScheduler: Using deadline as user call queue, count=3
+2016-01-27 16:59:23,656 INFO  [main] ipc.RpcServer: regionserver//192.168.1.124:0: started 10 reader(s).
+2016-01-27 16:59:23,659 INFO  [main] zookeeper.RecoverableZooKeeper: Process identifier=regionserver:53830 connecting to ZooKeeper ensemble=localhost:2181
+2016-01-27 16:59:23,659 INFO  [main] zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:2181 sessionTimeout=10000 watcher=regionserver:538300x0, quorum=localhost:2181, baseZNode=/hbase
+2016-01-27 16:59:23,660 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-01-27 16:59:23,661 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-01-27 16:59:23,661 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:53831
+2016-01-27 16:59:23,661 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /127.0.0.1:53831
+2016-01-27 16:59:23,662 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x152821814e90001 with negotiated timeout 10000 for client /127.0.0.1:53831
+2016-01-27 16:59:23,662 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x152821814e90001, negotiated timeout = 10000
+2016-01-27 16:59:23,664 INFO  [RpcServer.responder] ipc.RpcServer: RpcServer.responder: starting
+2016-01-27 16:59:23,664 INFO  [RpcServer.listener,port=53830] ipc.RpcServer: RpcServer.listener,port=53830: starting
+2016-01-27 16:59:23,667 INFO  [main] http.HttpRequestLog: Http request log for http.requests.regionserver is not defined
+2016-01-27 16:59:23,668 INFO  [main] http.HttpServer: Added global filter 'safety' (class=org.apache.hadoop.hbase.http.HttpServer$QuotingInputFilter)
+2016-01-27 16:59:23,668 INFO  [main] http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.hbase.http.lib.StaticUserWebFilter$StaticUserFilter) to context regionserver
+2016-01-27 16:59:23,668 INFO  [main] http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.hbase.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2016-01-27 16:59:23,668 INFO  [main] http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.hbase.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2016-01-27 16:59:23,670 INFO  [main] http.HttpServer: Jetty bound to port 53832
+2016-01-27 16:59:23,670 INFO  [main] mortbay.log: jetty-6.1.26
+2016-01-27 16:59:23,680 INFO  [192.168.1.124:53765.activeMasterManager] util.FSUtils: Created version file at file:/Users/lineplus/hbase with version=8
+2016-01-27 16:59:23,721 INFO  [192.168.1.124:53765.activeMasterManager] master.MasterFileSystem: BOOTSTRAP: creating hbase:meta region
+2016-01-27 16:59:23,722 INFO  [192.168.1.124:53765.activeMasterManager] regionserver.HRegion: creating HRegion hbase:meta HTD == 'hbase:meta', {TABLE_ATTRIBUTES => {IS_META => 'true', coprocessor$1 => '|org.apache.hadoop.hbase.coprocessor.MultiRowMutationEndpoint|536870911|'}, {NAME => 'info', BLOOMFILTER => 'NONE', VERSIONS => '10', IN_MEMORY => 'false', KEEP_DELETED_CELLS => 'FALSE', DATA_BLOCK_ENCODING => 'NONE', TTL => 'FOREVER', COMPRESSION => 'NONE', MIN_VERSIONS => '0', BLOCKCACHE => 'false', BLOCKSIZE => '8192', REPLICATION_SCOPE => '0'} RootDir = file:/Users/lineplus/hbase Table name == hbase:meta
+2016-01-27 16:59:23,752 INFO  [main] mortbay.log: Started SelectChannelConnector@0.0.0.0:53832
+2016-01-27 16:59:23,759 INFO  [192.168.1.124:53765.activeMasterManager] wal.WALFactory: Instantiating WALProvider of type class org.apache.hadoop.hbase.wal.DefaultWALProvider
+2016-01-27 16:59:23,773 INFO  [192.168.1.124:53765.activeMasterManager] wal.FSHLog: WAL configuration: blocksize=32 MB, rollsize=30.40 MB, prefix=hregion-01420656.default, suffix=, logDir=file:/Users/lineplus/hbase/WALs/hregion-01420656, archiveDir=file:/Users/lineplus/hbase/oldWALs
+2016-01-27 16:59:23,790 INFO  [RS:0;192.168.1.124:53830] zookeeper.RecoverableZooKeeper: Process identifier=hconnection-0x1b9113f4 connecting to ZooKeeper ensemble=localhost:2181
+2016-01-27 16:59:23,790 INFO  [M:0;192.168.1.124:53765] zookeeper.RecoverableZooKeeper: Process identifier=hconnection-0x7e500794 connecting to ZooKeeper ensemble=localhost:2181
+2016-01-27 16:59:23,790 INFO  [RS:0;192.168.1.124:53830] zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:2181 sessionTimeout=10000 watcher=hconnection-0x1b9113f40x0, quorum=localhost:2181, baseZNode=/hbase
+2016-01-27 16:59:23,790 INFO  [M:0;192.168.1.124:53765] zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:2181 sessionTimeout=10000 watcher=hconnection-0x7e5007940x0, quorum=localhost:2181, baseZNode=/hbase
+2016-01-27 16:59:23,791 INFO  [RS:0;192.168.1.124:53830-SendThread(localhost:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-01-27 16:59:23,791 INFO  [M:0;192.168.1.124:53765-SendThread(localhost:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-01-27 16:59:23,792 INFO  [RS:0;192.168.1.124:53830-SendThread(localhost:2181)] zookeeper.ClientCnxn: Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-01-27 16:59:23,792 INFO  [M:0;192.168.1.124:53765-SendThread(localhost:2181)] zookeeper.ClientCnxn: Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-01-27 16:59:23,792 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:53833
+2016-01-27 16:59:23,792 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:53834
+2016-01-27 16:59:23,792 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /127.0.0.1:53833
+2016-01-27 16:59:23,792 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /127.0.0.1:53834
+2016-01-27 16:59:23,793 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x152821814e90002 with negotiated timeout 10000 for client /127.0.0.1:53833
+2016-01-27 16:59:23,793 INFO  [RS:0;192.168.1.124:53830-SendThread(localhost:2181)] zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x152821814e90002, negotiated timeout = 10000
+2016-01-27 16:59:23,794 INFO  [192.168.1.124:53765.activeMasterManager] wal.FSHLog: Slow sync cost: 0 ms, current pipeline: []
+2016-01-27 16:59:23,794 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x152821814e90003 with negotiated timeout 10000 for client /127.0.0.1:53834
+2016-01-27 16:59:23,794 INFO  [M:0;192.168.1.124:53765-SendThread(localhost:2181)] zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x152821814e90003, negotiated timeout = 10000
+2016-01-27 16:59:23,795 INFO  [RS:0;192.168.1.124:53830] client.ZooKeeperRegistry: ClusterId read in ZooKeeper is null
+2016-01-27 16:59:23,795 INFO  [M:0;192.168.1.124:53765] client.ZooKeeperRegistry: ClusterId read in ZooKeeper is null
+2016-01-27 16:59:23,796 INFO  [192.168.1.124:53765.activeMasterManager] wal.FSHLog: New WAL /Users/lineplus/hbase/WALs/hregion-01420656/hregion-01420656.default.1453881563773
+2016-01-27 16:59:23,796 INFO  [192.168.1.124:53765.activeMasterManager] wal.FSHLog: FileSystem's output stream doesn't support getNumCurrentReplicas; HDFS-826 not available; fsOut=java.io.BufferedOutputStream
+2016-01-27 16:59:23,796 INFO  [192.168.1.124:53765.activeMasterManager] wal.FSHLog: FileSystem's output stream doesn't support getPipeline; not available; fsOut=java.io.BufferedOutputStream
+2016-01-27 16:59:23,851 INFO  [StoreOpener-1588230740-1] hfile.CacheConfig: Allocating LruBlockCache size=1.57 GB, blockSize=64 KB
+2016-01-27 16:59:23,860 INFO  [StoreOpener-1588230740-1] hfile.CacheConfig: blockCache=LruBlockCache{blockCount=0, currentSize=1734368, freeSize=1688360480, maxSize=1690094848, heapSize=1734368, minSize=1605590144, minFactor=0.95, multiSize=802795072, multiFactor=0.5, singleSize=401397536, singleFactor=0.25}, cacheDataOnRead=false, cacheDataOnWrite=false, cacheIndexesOnWrite=false, cacheBloomsOnWrite=false, cacheEvictOnClose=false, cacheDataCompressed=false, prefetchOnOpen=false
+2016-01-27 16:59:23,868 INFO  [StoreOpener-1588230740-1] compactions.CompactionConfiguration: size [134217728, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000
+2016-01-27 16:59:23,905 INFO  [192.168.1.124:53765.activeMasterManager] regionserver.HRegion: Onlined 1588230740; next sequenceid=2
+2016-01-27 16:59:23,906 INFO  [StoreCloserThread-hbase:meta,,1.1588230740-1] regionserver.HStore: Closed info
+2016-01-27 16:59:23,906 INFO  [192.168.1.124:53765.activeMasterManager] regionserver.HRegion: Closed hbase:meta,,1.1588230740
+2016-01-27 16:59:23,908 INFO  [192.168.1.124:53765.activeMasterManager] wal.FSHLog: Closed WAL: FSHLog hregion-01420656.default:(num 1453881563773)
+2016-01-27 16:59:23,934 INFO  [192.168.1.124:53765.activeMasterManager] coordination.SplitLogManagerCoordination: Found 0 orphan tasks and 0 rescan nodes
+2016-01-27 16:59:23,941 INFO  [192.168.1.124:53765.activeMasterManager] zookeeper.RecoverableZooKeeper: Process identifier=hconnection-0x1531694 connecting to ZooKeeper ensemble=localhost:2181
+2016-01-27 16:59:23,941 INFO  [192.168.1.124:53765.activeMasterManager] zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:2181 sessionTimeout=10000 watcher=hconnection-0x15316940x0, quorum=localhost:2181, baseZNode=/hbase
+2016-01-27 16:59:23,942 INFO  [192.168.1.124:53765.activeMasterManager-SendThread(localhost:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-01-27 16:59:23,942 INFO  [192.168.1.124:53765.activeMasterManager-SendThread(localhost:2181)] zookeeper.ClientCnxn: Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-01-27 16:59:23,942 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:53835
+2016-01-27 16:59:23,942 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /127.0.0.1:53835
+2016-01-27 16:59:23,943 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x152821814e90004 with negotiated timeout 10000 for client /127.0.0.1:53835
+2016-01-27 16:59:23,943 INFO  [192.168.1.124:53765.activeMasterManager-SendThread(localhost:2181)] zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x152821814e90004, negotiated timeout = 10000
+2016-01-27 16:59:23,972 INFO  [192.168.1.124:53765.activeMasterManager] balancer.StochasticLoadBalancer: loading config
+2016-01-27 16:59:24,015 INFO  [192.168.1.124:53765.activeMasterManager] master.HMaster: Server active/primary master=192.168.1.124,53765,1453881563009, sessionid=0x152821814e90000, setting cluster-up flag (Was=false)
+2016-01-27 16:59:24,016 INFO  [M:0;192.168.1.124:53765] regionserver.HRegionServer: ClusterId : b901efbd-174b-45e8-b209-16d79cecccff
+2016-01-27 16:59:24,016 INFO  [RS:0;192.168.1.124:53830] regionserver.HRegionServer: ClusterId : b901efbd-174b-45e8-b209-16d79cecccff
+2016-01-27 16:59:24,024 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x152821814e90001 type:create cxid:0x7 zxid:0x14 txntype:-1 reqpath:n/a Error Path:/hbase/flush-table-proc Error:KeeperErrorCode = NoNode for /hbase/flush-table-proc
+2016-01-27 16:59:24,025 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x152821814e90000 type:create cxid:0x2b zxid:0x15 txntype:-1 reqpath:n/a Error Path:/hbase/flush-table-proc Error:KeeperErrorCode = NoNode for /hbase/flush-table-proc
+2016-01-27 16:59:24,025 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x152821814e90000 type:create cxid:0x2c zxid:0x17 txntype:-1 reqpath:n/a Error Path:/hbase/flush-table-proc Error:KeeperErrorCode = NodeExists for /hbase/flush-table-proc
+2016-01-27 16:59:24,026 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x152821814e90000 type:create cxid:0x2d zxid:0x19 txntype:-1 reqpath:n/a Error Path:/hbase/flush-table-proc/acquired Error:KeeperErrorCode = NodeExists for /hbase/flush-table-proc/acquired
+2016-01-27 16:59:24,027 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x152821814e90000 type:create cxid:0x2f zxid:0x1b txntype:-1 reqpath:n/a Error Path:/hbase/flush-table-proc/reached Error:KeeperErrorCode = NodeExists for /hbase/flush-table-proc/reached
+2016-01-27 16:59:24,028 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x152821814e90000 type:create cxid:0x31 zxid:0x1d txntype:-1 reqpath:n/a Error Path:/hbase/flush-table-proc/abort Error:KeeperErrorCode = NodeExists for /hbase/flush-table-proc/abort
+2016-01-27 16:59:24,028 INFO  [192.168.1.124:53765.activeMasterManager] procedure.ZKProcedureUtil: Clearing all procedure znodes: /hbase/flush-table-proc/acquired /hbase/flush-table-proc/reached /hbase/flush-table-proc/abort
+2016-01-27 16:59:24,029 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x152821814e90001 type:create cxid:0xe zxid:0x1e txntype:-1 reqpath:n/a Error Path:/hbase/online-snapshot Error:KeeperErrorCode = NoNode for /hbase/online-snapshot
+2016-01-27 16:59:24,031 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x152821814e90000 type:create cxid:0x35 zxid:0x21 txntype:-1 reqpath:n/a Error Path:/hbase/online-snapshot/acquired Error:KeeperErrorCode = NodeExists for /hbase/online-snapshot/acquired
+2016-01-27 16:59:24,033 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x152821814e90000 type:create cxid:0x38 zxid:0x24 txntype:-1 reqpath:n/a Error Path:/hbase/online-snapshot/abort Error:KeeperErrorCode = NodeExists for /hbase/online-snapshot/abort
+2016-01-27 16:59:24,033 INFO  [192.168.1.124:53765.activeMasterManager] procedure.ZKProcedureUtil: Clearing all procedure znodes: /hbase/online-snapshot/acquired /hbase/online-snapshot/reached /hbase/online-snapshot/abort
+2016-01-27 16:59:24,036 INFO  [RS:0;192.168.1.124:53830] regionserver.MemStoreFlusher: globalMemStoreLimit=1.6 G, globalMemStoreLimitLowMark=1.5 G, maxHeap=3.9 G
+2016-01-27 16:59:24,040 INFO  [RS:0;192.168.1.124:53830] regionserver.HRegionServer: CompactionChecker runs every 10sec
+2016-01-27 16:59:24,053 INFO  [RS:0;192.168.1.124:53830] regionserver.RegionServerCoprocessorHost: System coprocessor loading is enabled
+2016-01-27 16:59:24,053 INFO  [RS:0;192.168.1.124:53830] regionserver.RegionServerCoprocessorHost: Table coprocessor loading is enabled
+2016-01-27 16:59:24,054 INFO  [RS:0;192.168.1.124:53830] regionserver.HRegionServer: reportForDuty to master=192.168.1.124,53765,1453881563009 with port=53830, startcode=1453881563658
+2016-01-27 16:59:24,055 INFO  [192.168.1.124:53765.activeMasterManager] master.MasterCoprocessorHost: System coprocessor loading is enabled
+2016-01-27 16:59:24,066 INFO  [192.168.1.124:53765.activeMasterManager] procedure2.ProcedureExecutor: Starting procedure executor threads=9
+2016-01-27 16:59:24,067 INFO  [192.168.1.124:53765.activeMasterManager] wal.WALProcedureStore: Starting WAL Procedure Store lease recovery
+2016-01-27 16:59:24,067 WARN  [192.168.1.124:53765.activeMasterManager] wal.WALProcedureStore: Log directory not found: File file:/Users/lineplus/hbase/MasterProcWALs does not exist
+2016-01-27 16:59:24,078 INFO  [192.168.1.124:53765.activeMasterManager] wal.WALProcedureStore: Lease acquired for flushLogId: 1
+2016-01-27 16:59:24,084 INFO  [192.168.1.124:53765.activeMasterManager] zookeeper.RecoverableZooKeeper: Process identifier=replicationLogCleaner connecting to ZooKeeper ensemble=localhost:2181
+2016-01-27 16:59:24,084 INFO  [192.168.1.124:53765.activeMasterManager] zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:2181 sessionTimeout=10000 watcher=replicationLogCleaner0x0, quorum=localhost:2181, baseZNode=/hbase
+2016-01-27 16:59:24,085 INFO  [192.168.1.124:53765.activeMasterManager-SendThread(localhost:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-01-27 16:59:24,085 INFO  [192.168.1.124:53765.activeMasterManager-SendThread(localhost:2181)] zookeeper.ClientCnxn: Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-01-27 16:59:24,085 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /0:0:0:0:0:0:0:1:53836
+2016-01-27 16:59:24,086 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /0:0:0:0:0:0:0:1:53836
+2016-01-27 16:59:24,086 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x152821814e90005 with negotiated timeout 10000 for client /0:0:0:0:0:0:0:1:53836
+2016-01-27 16:59:24,087 INFO  [192.168.1.124:53765.activeMasterManager-SendThread(localhost:2181)] zookeeper.ClientCnxn: Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x152821814e90005, negotiated timeout = 10000
+2016-01-27 16:59:24,090 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x152821814e90005 type:create cxid:0x1 zxid:0x27 txntype:-1 reqpath:n/a Error Path:/hbase/replication Error:KeeperErrorCode = NoNode for /hbase/replication
+2016-01-27 16:59:24,096 INFO  [192.168.1.124:53765.activeMasterManager] master.ServerManager: Waiting for region servers count to settle; currently checked in 0, slept for 0 ms, expecting minimum of 1, maximum of 2147483647, timeout of 4500 ms, interval of 1500 ms.
+2016-01-27 16:59:24,190 INFO  [PriorityRpcServer.handler=0,queue=0,port=53765] master.ServerManager: Registering server=192.168.1.124,53830,1453881563658
+2016-01-27 16:59:24,200 INFO  [RS:0;192.168.1.124:53830] hfile.CacheConfig: blockCache=LruBlockCache{blockCount=0, currentSize=1734368, freeSize=1688360480, maxSize=1690094848, heapSize=1734368, minSize=1605590144, minFactor=0.95, multiSize=802795072, multiFactor=0.5, singleSize=401397536, singleFactor=0.25}, cacheDataOnRead=true, cacheDataOnWrite=false, cacheIndexesOnWrite=false, cacheBloomsOnWrite=false, cacheEvictOnClose=false, cacheDataCompressed=false, prefetchOnOpen=false
+2016-01-27 16:59:24,200 INFO  [192.168.1.124:53765.activeMasterManager] master.ServerManager: Waiting for region servers count to settle; currently checked in 1, slept for 104 ms, expecting minimum of 1, maximum of 2147483647, timeout of 4500 ms, interval of 1500 ms.
+2016-01-27 16:59:24,210 INFO  [RS:0;192.168.1.124:53830] wal.WALFactory: Instantiating WALProvider of type class org.apache.hadoop.hbase.wal.DefaultWALProvider
+2016-01-27 16:59:24,211 INFO  [RS:0;192.168.1.124:53830] wal.FSHLog: WAL configuration: blocksize=32 MB, rollsize=30.40 MB, prefix=192.168.1.124%2C53830%2C1453881563658.default, suffix=, logDir=file:/Users/lineplus/hbase/WALs/192.168.1.124,53830,1453881563658, archiveDir=file:/Users/lineplus/hbase/oldWALs
+2016-01-27 16:59:24,220 INFO  [RS:0;192.168.1.124:53830] wal.FSHLog: Slow sync cost: 0 ms, current pipeline: []
+2016-01-27 16:59:24,220 INFO  [RS:0;192.168.1.124:53830] wal.FSHLog: New WAL /Users/lineplus/hbase/WALs/192.168.1.124,53830,1453881563658/192.168.1.124%2C53830%2C1453881563658.default.1453881564211
+2016-01-27 16:59:24,220 INFO  [RS:0;192.168.1.124:53830] wal.FSHLog: FileSystem's output stream doesn't support getNumCurrentReplicas; HDFS-826 not available; fsOut=java.io.BufferedOutputStream
+2016-01-27 16:59:24,220 INFO  [RS:0;192.168.1.124:53830] wal.FSHLog: FileSystem's output stream doesn't support getPipeline; not available; fsOut=java.io.BufferedOutputStream
+2016-01-27 16:59:24,225 INFO  [RS:0;192.168.1.124:53830] regionserver.MetricsRegionServerWrapperImpl: Computing regionserver metrics every 5000 milliseconds
+2016-01-27 16:59:24,231 INFO  [RS:0;192.168.1.124:53830] regionserver.ReplicationSourceManager: Current list of replicators: [192.168.1.124,53830,1453881563658] other RSs: [192.168.1.124,53830,1453881563658]
+2016-01-27 16:59:24,248 INFO  [RS:0;192.168.1.124:53830] zookeeper.RecoverableZooKeeper: Process identifier=hconnection-0x43dd0a0b connecting to ZooKeeper ensemble=localhost:2181
+2016-01-27 16:59:24,248 INFO  [RS:0;192.168.1.124:53830] zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:2181 sessionTimeout=10000 watcher=hconnection-0x43dd0a0b0x0, quorum=localhost:2181, baseZNode=/hbase
+2016-01-27 16:59:24,249 INFO  [RS:0;192.168.1.124:53830-SendThread(localhost:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-01-27 16:59:24,249 INFO  [RS:0;192.168.1.124:53830-SendThread(localhost:2181)] zookeeper.ClientCnxn: Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-01-27 16:59:24,249 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:53901
+2016-01-27 16:59:24,250 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /127.0.0.1:53901
+2016-01-27 16:59:24,250 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x152821814e90006 with negotiated timeout 10000 for client /127.0.0.1:53901
+2016-01-27 16:59:24,250 INFO  [RS:0;192.168.1.124:53830-SendThread(localhost:2181)] zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x152821814e90006, negotiated timeout = 10000
+2016-01-27 16:59:24,266 INFO  [SplitLogWorker-192.168.1.124:53830] regionserver.SplitLogWorker: SplitLogWorker 192.168.1.124,53830,1453881563658 starting
+2016-01-27 16:59:24,267 INFO  [RS:0;192.168.1.124:53830] regionserver.HeapMemoryManager: Starting HeapMemoryTuner chore.
+2016-01-27 16:59:24,269 INFO  [RS:0;192.168.1.124:53830] regionserver.HRegionServer: Serving as 192.168.1.124,53830,1453881563658, RpcServer on 192.168.1.124/192.168.1.124:53830, sessionid=0x152821814e90001
+2016-01-27 16:59:24,277 INFO  [RS:0;192.168.1.124:53830] quotas.RegionServerQuotaManager: Quota support disabled
+2016-01-27 16:59:25,729 INFO  [192.168.1.124:53765.activeMasterManager] master.ServerManager: Waiting for region servers count to settle; currently checked in 1, slept for 1633 ms, expecting minimum of 1, maximum of 2147483647, timeout of 4500 ms, interval of 1500 ms.
+2016-01-27 16:59:27,260 INFO  [192.168.1.124:53765.activeMasterManager] master.ServerManager: Waiting for region servers count to settle; currently checked in 1, slept for 3164 ms, expecting minimum of 1, maximum of 2147483647, timeout of 4500 ms, interval of 1500 ms.
+2016-01-27 16:59:28,645 INFO  [192.168.1.124:53765.activeMasterManager] master.ServerManager: Finished waiting for region servers count to settle; checked in 1, slept for 4549 ms, expecting minimum of 1, maximum of 2147483647, master is running
+2016-01-27 16:59:28,647 INFO  [192.168.1.124:53765.activeMasterManager] master.MasterFileSystem: Log folder file:/Users/lineplus/hbase/WALs/192.168.1.124,53830,1453881563658 belongs to an existing region server
+2016-01-27 16:59:29,533 INFO  [192.168.1.124:53765.activeMasterManager] zookeeper.MetaTableLocator: Deleting hbase:meta region location in ZooKeeper
+2016-01-27 16:59:29,534 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x152821814e90000 type:delete cxid:0x4c zxid:0x2d txntype:-1 reqpath:n/a Error Path:/hbase/meta-region-server Error:KeeperErrorCode = NoNode for /hbase/meta-region-server
+2016-01-27 16:59:29,536 INFO  [192.168.1.124:53765.activeMasterManager] zookeeper.RecoverableZooKeeper: Node /hbase/meta-region-server already deleted, retry=false
+2016-01-27 16:59:29,546 INFO  [192.168.1.124:53765.activeMasterManager] zookeeper.ZKTableStateManager: Moving table hbase:meta state from null to ENABLED
+2016-01-27 16:59:29,554 INFO  [192.168.1.124:53765.activeMasterManager] master.AssignmentManager: Assigning hbase:meta,,1.1588230740 to 192.168.1.124,53830,1453881563658
+2016-01-27 16:59:29,554 INFO  [192.168.1.124:53765.activeMasterManager] master.RegionStates: Transition {1588230740 state=OFFLINE, ts=1453881569540, server=null} to {1588230740 state=PENDING_OPEN, ts=1453881569554, server=192.168.1.124,53830,1453881563658}
+2016-01-27 16:59:29,572 INFO  [PriorityRpcServer.handler=0,queue=0,port=53830] regionserver.RSRpcServices: Open hbase:meta,,1.1588230740
+2016-01-27 16:59:29,576 INFO  [RS_OPEN_META-192.168.1.124:53830-0] wal.WALFactory: Instantiating WALProvider of type class org.apache.hadoop.hbase.wal.DefaultWALProvider
+2016-01-27 16:59:29,577 INFO  [192.168.1.124:53765.activeMasterManager] master.ServerManager: AssignmentManager hasn't finished failover cleanup; waiting
+2016-01-27 16:59:29,577 INFO  [RS_OPEN_META-192.168.1.124:53830-0] wal.FSHLog: WAL configuration: blocksize=32 MB, rollsize=30.40 MB, prefix=192.168.1.124%2C53830%2C1453881563658..meta, suffix=.meta, logDir=file:/Users/lineplus/hbase/WALs/192.168.1.124,53830,1453881563658, archiveDir=file:/Users/lineplus/hbase/oldWALs
+2016-01-27 16:59:29,578 INFO  [AM.ZK.Worker-pool3-t1] master.RegionStates: Transition {1588230740 state=PENDING_OPEN, ts=1453881569554, server=192.168.1.124,53830,1453881563658} to {1588230740 state=OPENING, ts=1453881569578, server=192.168.1.124,53830,1453881563658}
+2016-01-27 16:59:29,590 INFO  [RS_OPEN_META-192.168.1.124:53830-0] wal.FSHLog: Slow sync cost: 0 ms, current pipeline: []
+2016-01-27 16:59:29,590 INFO  [RS_OPEN_META-192.168.1.124:53830-0] wal.FSHLog: New WAL /Users/lineplus/hbase/WALs/192.168.1.124,53830,1453881563658/192.168.1.124%2C53830%2C1453881563658..meta.1453881569577.meta
+2016-01-27 16:59:29,590 INFO  [RS_OPEN_META-192.168.1.124:53830-0] wal.FSHLog: FileSystem's output stream doesn't support getNumCurrentReplicas; HDFS-826 not available; fsOut=java.io.BufferedOutputStream
+2016-01-27 16:59:29,590 INFO  [RS_OPEN_META-192.168.1.124:53830-0] wal.FSHLog: FileSystem's output stream doesn't support getPipeline; not available; fsOut=java.io.BufferedOutputStream
+2016-01-27 16:59:29,633 INFO  [RS_OPEN_META-192.168.1.124:53830-0] regionserver.RegionCoprocessorHost: Loaded coprocessor org.apache.hadoop.hbase.coprocessor.MultiRowMutationEndpoint from HTD of hbase:meta successfully.
+2016-01-27 16:59:29,641 INFO  [StoreOpener-1588230740-1] hfile.CacheConfig: blockCache=LruBlockCache{blockCount=0, currentSize=1734368, freeSize=1688360480, maxSize=1690094848, heapSize=1734368, minSize=1605590144, minFactor=0.95, multiSize=802795072, multiFactor=0.5, singleSize=401397536, singleFactor=0.25}, cacheDataOnRead=true, cacheDataOnWrite=false, cacheIndexesOnWrite=false, cacheBloomsOnWrite=false, cacheEvictOnClose=false, cacheDataCompressed=false, prefetchOnOpen=false
+2016-01-27 16:59:29,642 INFO  [StoreOpener-1588230740-1] compactions.CompactionConfiguration: size [134217728, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000
+2016-01-27 16:59:29,656 INFO  [RS_OPEN_META-192.168.1.124:53830-0] regionserver.HRegion: Onlined 1588230740; next sequenceid=3
+2016-01-27 16:59:29,678 INFO  [PostOpenDeployTasks:1588230740] regionserver.HRegionServer: Post open deploy tasks for hbase:meta,,1.1588230740
+2016-01-27 16:59:29,678 INFO  [PostOpenDeployTasks:1588230740] zookeeper.MetaTableLocator: Setting hbase:meta region location in ZooKeeper as 192.168.1.124,53830,1453881563658
+2016-01-27 16:59:29,682 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x152821814e90001 type:setData cxid:0x2d zxid:0x32 txntype:-1 reqpath:n/a Error Path:/hbase/meta-region-server Error:KeeperErrorCode = NoNode for /hbase/meta-region-server
+2016-01-27 16:59:29,685 INFO  [AM.ZK.Worker-pool3-t2] master.RegionStates: Transition {1588230740 state=OPENING, ts=1453881569578, server=192.168.1.124,53830,1453881563658} to {1588230740 state=OPEN, ts=1453881569685, server=192.168.1.124,53830,1453881563658}
+2016-01-27 16:59:29,687 INFO  [AM.ZK.Worker-pool3-t2] coordination.ZkOpenRegionCoordination: Handling OPENED of 1588230740 from 192.168.1.124,53765,1453881563009; deleting unassigned node
+2016-01-27 16:59:29,689 INFO  [192.168.1.124:53765.activeMasterManager] master.HMaster: hbase:meta with replicaId 0 assigned=1, rit=false, location=192.168.1.124,53830,1453881563658
+2016-01-27 16:59:29,750 INFO  [192.168.1.124:53765.activeMasterManager] hbase.MetaMigrationConvertingToPB: hbase:meta doesn't have any entries to update.
+2016-01-27 16:59:29,750 INFO  [192.168.1.124:53765.activeMasterManager] hbase.MetaMigrationConvertingToPB: META already up-to date with PB serialization
+2016-01-27 16:59:29,755 INFO  [192.168.1.124:53765.activeMasterManager] master.AssignmentManager: Clean cluster startup. Assigning user regions
+2016-01-27 16:59:29,756 INFO  [192.168.1.124:53765.activeMasterManager] master.AssignmentManager: Joined the cluster in 6ms, failover=false
+2016-01-27 16:59:29,761 INFO  [192.168.1.124:53765.activeMasterManager] master.TableNamespaceManager: Namespace table not found. Creating...
+2016-01-27 16:59:29,898 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x152821814e90000 type:create cxid:0x1df zxid:0x36 txntype:-1 reqpath:n/a Error Path:/hbase/table-lock/hbase:namespace Error:KeeperErrorCode = NoNode for /hbase/table-lock/hbase:namespace
+2016-01-27 16:59:30,030 INFO  [RegionOpenAndInitThread-hbase:namespace-1] regionserver.HRegion: creating HRegion hbase:namespace HTD == 'hbase:namespace', {NAME => 'info', BLOOMFILTER => 'ROW', VERSIONS => '10', IN_MEMORY => 'true', KEEP_DELETED_CELLS => 'FALSE', DATA_BLOCK_ENCODING => 'NONE', TTL => 'FOREVER', COMPRESSION => 'NONE', CACHE_DATA_IN_L1 => 'true', MIN_VERSIONS => '0', BLOCKCACHE => 'true', BLOCKSIZE => '8192', REPLICATION_SCOPE => '0'} RootDir = file:/Users/lineplus/hbase/.tmp Table name == hbase:namespace
+2016-01-27 16:59:30,041 INFO  [RegionOpenAndInitThread-hbase:namespace-1] regionserver.HRegion: Closed hbase:namespace,,1453881569761.3cf8d3b6eb1e7095ba25b73b439244d7.
+2016-01-27 16:59:30,200 INFO  [ProcedureExecutorThread-0] hbase.MetaTableAccessor: Added 1
+2016-01-27 16:59:30,307 INFO  [ProcedureExecutorThread-0] zookeeper.ZKTableStateManager: Moving table hbase:namespace state from null to ENABLING
+2016-01-27 16:59:30,310 INFO  [ProcedureExecutorThread-0] master.AssignmentManager: Assigning 1 region(s) to 192.168.1.124,53830,1453881563658
+2016-01-27 16:59:30,318 INFO  [ProcedureExecutorThread-0] master.RegionStates: Transition {3cf8d3b6eb1e7095ba25b73b439244d7 state=OFFLINE, ts=1453881570311, server=null} to {3cf8d3b6eb1e7095ba25b73b439244d7 state=PENDING_OPEN, ts=1453881570318, server=192.168.1.124,53830,1453881563658}
+2016-01-27 16:59:30,321 INFO  [PriorityRpcServer.handler=10,queue=0,port=53830] regionserver.RSRpcServices: Open hbase:namespace,,1453881569761.3cf8d3b6eb1e7095ba25b73b439244d7.
+2016-01-27 16:59:30,323 INFO  [ProcedureExecutorThread-0] zookeeper.ZKTableStateManager: Moving table hbase:namespace state from ENABLING to ENABLED
+2016-01-27 16:59:30,325 INFO  [AM.ZK.Worker-pool3-t5] master.RegionStates: Transition {3cf8d3b6eb1e7095ba25b73b439244d7 state=PENDING_OPEN, ts=1453881570318, server=192.168.1.124,53830,1453881563658} to {3cf8d3b6eb1e7095ba25b73b439244d7 state=OPENING, ts=1453881570325, server=192.168.1.124,53830,1453881563658}
+2016-01-27 16:59:30,332 INFO  [StoreOpener-3cf8d3b6eb1e7095ba25b73b439244d7-1] hfile.CacheConfig: blockCache=LruBlockCache{blockCount=0, currentSize=1734368, freeSize=1688360480, maxSize=1690094848, heapSize=1734368, minSize=1605590144, minFactor=0.95, multiSize=802795072, multiFactor=0.5, singleSize=401397536, singleFactor=0.25}, cacheDataOnRead=true, cacheDataOnWrite=false, cacheIndexesOnWrite=false, cacheBloomsOnWrite=false, cacheEvictOnClose=false, cacheDataCompressed=false, prefetchOnOpen=false
+2016-01-27 16:59:30,332 INFO  [StoreOpener-3cf8d3b6eb1e7095ba25b73b439244d7-1] compactions.CompactionConfiguration: size [134217728, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000
+2016-01-27 16:59:30,343 INFO  [RS_OPEN_REGION-192.168.1.124:53830-0] regionserver.HRegion: Onlined 3cf8d3b6eb1e7095ba25b73b439244d7; next sequenceid=2
+2016-01-27 16:59:30,344 INFO  [PostOpenDeployTasks:3cf8d3b6eb1e7095ba25b73b439244d7] regionserver.HRegionServer: Post open deploy tasks for hbase:namespace,,1453881569761.3cf8d3b6eb1e7095ba25b73b439244d7.
+2016-01-27 16:59:30,350 INFO  [PostOpenDeployTasks:3cf8d3b6eb1e7095ba25b73b439244d7] hbase.MetaTableAccessor: Updated row hbase:namespace,,1453881569761.3cf8d3b6eb1e7095ba25b73b439244d7. with server=192.168.1.124,53830,1453881563658
+2016-01-27 16:59:30,352 INFO  [AM.ZK.Worker-pool3-t6] master.RegionStates: Transition {3cf8d3b6eb1e7095ba25b73b439244d7 state=OPENING, ts=1453881570325, server=192.168.1.124,53830,1453881563658} to {3cf8d3b6eb1e7095ba25b73b439244d7 state=OPEN, ts=1453881570352, server=192.168.1.124,53830,1453881563658}
+2016-01-27 16:59:30,453 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x152821814e90000 type:create cxid:0x201 zxid:0x45 txntype:-1 reqpath:n/a Error Path:/hbase/namespace/default Error:KeeperErrorCode = NodeExists for /hbase/namespace/default
+2016-01-27 16:59:30,453 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x152821814e90000 type:create cxid:0x204 zxid:0x47 txntype:-1 reqpath:n/a Error Path:/hbase/namespace/hbase Error:KeeperErrorCode = NodeExists for /hbase/namespace/hbase
+2016-01-27 16:59:30,454 INFO  [192.168.1.124:53765.activeMasterManager] master.HMaster: Master has completed initialization
+2016-01-27 16:59:30,455 INFO  [192.168.1.124:53765.activeMasterManager] quotas.MasterQuotaManager: Quota support disabled
+2016-01-27 16:59:56,173 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /0:0:0:0:0:0:0:1:55880
+2016-01-27 16:59:56,177 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /0:0:0:0:0:0:0:1:55880
+2016-01-27 16:59:56,179 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x152821814e90007 with negotiated timeout 40000 for client /0:0:0:0:0:0:0:1:55880
+2016-01-27 17:00:03,474 INFO  [B.defaultRpcServer.handler=1,queue=1,port=53765] master.HMaster: Client=lineplus/null create 'test', {NAME => 'cf', BLOOMFILTER => 'ROW', VERSIONS => '1', IN_MEMORY => 'false', KEEP_DELETED_CELLS => 'FALSE', DATA_BLOCK_ENCODING => 'NONE', TTL => 'FOREVER', COMPRESSION => 'NONE', MIN_VERSIONS => '0', BLOCKCACHE => 'true', BLOCKSIZE => '65536', REPLICATION_SCOPE => '0'}
+2016-01-27 17:00:03,581 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x152821814e90000 type:create cxid:0x20a zxid:0x4b txntype:-1 reqpath:n/a Error Path:/hbase/table-lock/test Error:KeeperErrorCode = NoNode for /hbase/table-lock/test
+2016-01-27 17:00:03,709 INFO  [RegionOpenAndInitThread-test-1] regionserver.HRegion: creating HRegion test HTD == 'test', {NAME => 'cf', BLOOMFILTER => 'ROW', VERSIONS => '1', IN_MEMORY => 'false', KEEP_DELETED_CELLS => 'FALSE', DATA_BLOCK_ENCODING => 'NONE', TTL => 'FOREVER', COMPRESSION => 'NONE', MIN_VERSIONS => '0', BLOCKCACHE => 'true', BLOCKSIZE => '65536', REPLICATION_SCOPE => '0'} RootDir = file:/Users/lineplus/hbase/.tmp Table name == test
+2016-01-27 17:00:03,720 INFO  [RegionOpenAndInitThread-test-1] regionserver.HRegion: Closed test,,1453881603473.15e6afd94a29b94984ff36c2cfd5db5e.
+2016-01-27 17:00:03,828 INFO  [ProcedureExecutorThread-1] hbase.MetaTableAccessor: Added 1
+2016-01-27 17:00:03,931 INFO  [ProcedureExecutorThread-1] zookeeper.ZKTableStateManager: Moving table test state from null to ENABLING
+2016-01-27 17:00:03,935 INFO  [ProcedureExecutorThread-1] master.AssignmentManager: Assigning 1 region(s) to 192.168.1.124,53830,1453881563658
+2016-01-27 17:00:03,942 INFO  [ProcedureExecutorThread-1] master.RegionStates: Transition {15e6afd94a29b94984ff36c2cfd5db5e state=OFFLINE, ts=1453881603936, server=null} to {15e6afd94a29b94984ff36c2cfd5db5e state=PENDING_OPEN, ts=1453881603942, server=192.168.1.124,53830,1453881563658}
+2016-01-27 17:00:03,942 INFO  [PriorityRpcServer.handler=3,queue=1,port=53830] regionserver.RSRpcServices: Open test,,1453881603473.15e6afd94a29b94984ff36c2cfd5db5e.
+2016-01-27 17:00:03,946 INFO  [AM.ZK.Worker-pool3-t10] master.RegionStates: Transition {15e6afd94a29b94984ff36c2cfd5db5e state=PENDING_OPEN, ts=1453881603942, server=192.168.1.124,53830,1453881563658} to {15e6afd94a29b94984ff36c2cfd5db5e state=OPENING, ts=1453881603946, server=192.168.1.124,53830,1453881563658}
+2016-01-27 17:00:03,952 INFO  [StoreOpener-15e6afd94a29b94984ff36c2cfd5db5e-1] hfile.CacheConfig: blockCache=LruBlockCache{blockCount=0, currentSize=1734368, freeSize=1688360480, maxSize=1690094848, heapSize=1734368, minSize=1605590144, minFactor=0.95, multiSize=802795072, multiFactor=0.5, singleSize=401397536, singleFactor=0.25}, cacheDataOnRead=true, cacheDataOnWrite=false, cacheIndexesOnWrite=false, cacheBloomsOnWrite=false, cacheEvictOnClose=false, cacheDataCompressed=false, prefetchOnOpen=false
+2016-01-27 17:00:03,953 INFO  [StoreOpener-15e6afd94a29b94984ff36c2cfd5db5e-1] compactions.CompactionConfiguration: size [134217728, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000
+2016-01-27 17:00:03,963 INFO  [RS_OPEN_REGION-192.168.1.124:53830-1] regionserver.HRegion: Onlined 15e6afd94a29b94984ff36c2cfd5db5e; next sequenceid=2
+2016-01-27 17:00:03,965 INFO  [PostOpenDeployTasks:15e6afd94a29b94984ff36c2cfd5db5e] regionserver.HRegionServer: Post open deploy tasks for test,,1453881603473.15e6afd94a29b94984ff36c2cfd5db5e.
+2016-01-27 17:00:03,967 INFO  [PostOpenDeployTasks:15e6afd94a29b94984ff36c2cfd5db5e] hbase.MetaTableAccessor: Updated row test,,1453881603473.15e6afd94a29b94984ff36c2cfd5db5e. with server=192.168.1.124,53830,1453881563658
+2016-01-27 17:00:03,969 INFO  [AM.ZK.Worker-pool3-t11] master.RegionStates: Transition {15e6afd94a29b94984ff36c2cfd5db5e state=OPENING, ts=1453881603946, server=192.168.1.124,53830,1453881563658} to {15e6afd94a29b94984ff36c2cfd5db5e state=OPEN, ts=1453881603969, server=192.168.1.124,53830,1453881563658}
+2016-01-27 17:00:03,970 INFO  [ProcedureExecutorThread-1] zookeeper.ZKTableStateManager: Moving table test state from ENABLING to ENABLED
+2016-01-27 17:04:23,850 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=1.65 MB, freeSize=1.57 GB, max=1.57 GB, blockCount=0, accesses=0, hits=0, hitRatio=0, cachingAccesses=0, cachingHits=0, cachingHitsRatio=0,evictions=29, evicted=0, evictedPerRun=0.0
+2016-01-27 17:04:34,224 INFO  [192.168.1.124,53830,1453881563658_ChoreService_1] regionserver.HRegionServer: 192.168.1.124,53830,1453881563658-MemstoreFlusherChore requesting flush for region hbase:meta,,1.1588230740 after a delay of 13195
+2016-01-27 17:04:44,218 INFO  [192.168.1.124,53830,1453881563658_ChoreService_1] regionserver.HRegionServer: 192.168.1.124,53830,1453881563658-MemstoreFlusherChore requesting flush for region hbase:meta,,1.1588230740 after a delay of 19200
+2016-01-27 17:04:47,424 INFO  [MemStoreFlusher.1] regionserver.HRegion: Started memstore flush for hbase:meta,,1.1588230740, current region memstore size 1.91 KB, and 1/1 column families' memstores are being flushed.
+2016-01-27 17:04:47,482 INFO  [MemStoreFlusher.1] regionserver.DefaultStoreFlusher: Flushed, sequenceid=13, memsize=1.9 K, hasBloomFilter=false, into tmp file file:/Users/lineplus/hbase/data/hbase/meta/1588230740/.tmp/6a87cd0ea73b486cac983e58508d703e
+2016-01-27 17:04:47,526 INFO  [MemStoreFlusher.1] regionserver.HStore: Added file:/Users/lineplus/hbase/data/hbase/meta/1588230740/info/6a87cd0ea73b486cac983e58508d703e, entries=8, sequenceid=13, filesize=5.6 K
+2016-01-27 17:04:47,527 INFO  [MemStoreFlusher.1] regionserver.HRegion: Finished memstore flush of ~1.91 KB/1952, currentsize=0 B/0 for region hbase:meta,,1.1588230740 in 104ms, sequenceid=13, compaction requested=false
+2016-01-27 17:09:23,833 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=1.65 MB, freeSize=1.57 GB, max=1.57 GB, blockCount=0, accesses=0, hits=0, hitRatio=0, cachingAccesses=0, cachingHits=0, cachingHitsRatio=0,evictions=59, evicted=0, evictedPerRun=0.0
+2016-01-27 17:14:23,822 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=1.66 MB, freeSize=1.57 GB, max=1.57 GB, blockCount=1, accesses=1, hits=0, hitRatio=0, cachingAccesses=1, cachingHits=0, cachingHitsRatio=0,evictions=89, evicted=0, evictedPerRun=0.0
+2016-01-27 17:19:23,810 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=1.66 MB, freeSize=1.57 GB, max=1.57 GB, blockCount=1, accesses=2, hits=1, hitRatio=50.00%, , cachingAccesses=2, cachingHits=1, cachingHitsRatio=50.00%, evictions=119, evicted=0, evictedPerRun=0.0
+2016-01-27 17:24:23,803 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=1.66 MB, freeSize=1.57 GB, max=1.57 GB, blockCount=1, accesses=3, hits=2, hitRatio=66.67%, , cachingAccesses=3, cachingHits=2, cachingHitsRatio=66.67%, evictions=149, evicted=0, evictedPerRun=0.0
+2016-01-27 17:29:23,797 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=1.66 MB, freeSize=1.57 GB, max=1.57 GB, blockCount=1, accesses=4, hits=3, hitRatio=75.00%, , cachingAccesses=4, cachingHits=3, cachingHitsRatio=75.00%, evictions=179, evicted=0, evictedPerRun=0.0
+2016-01-27 17:34:23,790 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=1.66 MB, freeSize=1.57 GB, max=1.57 GB, blockCount=1, accesses=5, hits=4, hitRatio=80.00%, , cachingAccesses=5, cachingHits=4, cachingHitsRatio=80.00%, evictions=209, evicted=0, evictedPerRun=0.0
+2016-01-27 17:39:23,782 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=1.66 MB, freeSize=1.57 GB, max=1.57 GB, blockCount=1, accesses=6, hits=5, hitRatio=83.33%, , cachingAccesses=6, cachingHits=5, cachingHitsRatio=83.33%, evictions=239, evicted=0, evictedPerRun=0.0
+2016-01-27 18:31:57,005 INFO  [SessionTracker] server.ZooKeeperServer: Expiring session 0x152821814e90003, timeout of 10000ms exceeded
+2016-01-27 18:31:57,006 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Client session timed out, have not heard from server in 2947310ms for sessionid 0x152821814e90000, closing socket connection and attempting reconnect
+2016-01-27 18:31:57,007 WARN  [RS:0;192.168.1.124:53830] util.Sleeper: We slept 2947419ms instead of 3000ms, this is likely due to a long garbage collecting pause and it's usually bad, see http://hbase.apache.org/book.html#trouble.rs.runtime.zkexpired
+2016-01-27 18:31:57,008 INFO  [RS:0;192.168.1.124:53830-SendThread(localhost:2181)] zookeeper.ClientCnxn: Client session timed out, have not heard from server in 2947351ms for sessionid 0x152821814e90002, closing socket connection and attempting reconnect
+2016-01-27 18:31:57,008 INFO  [M:0;192.168.1.124:53765-SendThread(localhost:2181)] zookeeper.ClientCnxn: Client session timed out, have not heard from server in 2947867ms for sessionid 0x152821814e90003, closing socket connection and attempting reconnect
+2016-01-27 18:31:57,011 INFO  [JvmPauseMonitor] util.JvmPauseMonitor: Detected pause in JVM or host machine (eg GC): pause of approximately 1367ms
+No GCs detected
+2016-01-27 18:31:58,353 INFO  [192.168.1.124,53830,1453881563658_ChoreService_3] regionserver.HRegionServer: 192.168.1.124,53830,1453881563658-MemstoreFlusherChore requesting flush for region hbase:namespace,,1453881569761.3cf8d3b6eb1e7095ba25b73b439244d7. after a delay of 21375
+2016-01-27 18:31:58,353 INFO  [192.168.1.124,53830,1453881563658_ChoreService_2] regionserver.HRegionServer$PeriodicMemstoreFlusher: Chore: 192.168.1.124,53830,1453881563658-MemstoreFlusherChore missed its start time
+2016-01-27 18:31:58,352 INFO  [192.168.1.124,53830,1453881563658_ChoreService_1] regionserver.HRegionServer$CompactionChecker: Chore: CompactionChecker missed its start time
+2016-01-27 18:31:57,865 INFO  [M:0;192.168.1.124:53765-SendThread(localhost:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-01-27 18:31:57,621 INFO  [RS:0;192.168.1.124:53830-SendThread(localhost:2181)] zookeeper.ClientCnxn: Client session timed out, have not heard from server in 2947259ms for sessionid 0x152821814e90006, closing socket connection and attempting reconnect
+2016-01-27 18:31:57,347 INFO  [192.168.1.124:53765.activeMasterManager-SendThread(localhost:2181)] zookeeper.ClientCnxn: Client session timed out, have not heard from server in 2947260ms for sessionid 0x152821814e90004, closing socket connection and attempting reconnect
+2016-01-27 18:31:57,324 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-01-27 18:31:58,438 INFO  [M:0;192.168.1.124:53765-SendThread(localhost:2181)] zookeeper.ClientCnxn: Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-01-27 18:31:58,439 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-01-27 18:31:57,281 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Client session timed out, have not heard from server in 2947261ms for sessionid 0x152821814e90001, closing socket connection and attempting reconnect
+2016-01-27 18:31:57,198 INFO  [RS:0;192.168.1.124:53830-SendThread(localhost:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-01-27 18:31:57,013 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x152821814e90002, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-27 18:31:57,012 INFO  [SessionTracker] server.ZooKeeperServer: Expiring session 0x152821814e90002, timeout of 10000ms exceeded
+2016-01-27 18:31:58,441 INFO  [SessionTracker] server.ZooKeeperServer: Expiring session 0x152821814e90005, timeout of 10000ms exceeded
+2016-01-27 18:31:57,012 INFO  [JvmPauseMonitor] util.JvmPauseMonitor: Detected pause in JVM or host machine (eg GC): pause of approximately 1264ms
+No GCs detected
+2016-01-27 18:31:57,012 INFO  [192.168.1.124:53765.activeMasterManager-SendThread(localhost:2181)] zookeeper.ClientCnxn: Client session timed out, have not heard from server in 2947355ms for sessionid 0x152821814e90005, closing socket connection and attempting reconnect
+2016-01-27 18:31:57,012 INFO  [192.168.1.124,53765,1453881563009_splitLogManager__ChoreService_1] master.SplitLogManager$TimeoutMonitor: Chore: SplitLogManager Timeout Monitor missed its start time
+2016-01-27 18:31:58,441 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /127.0.0.1:53833 which had sessionid 0x152821814e90002
+2016-01-27 18:31:58,441 INFO  [SessionTracker] server.ZooKeeperServer: Expiring session 0x152821814e90000, timeout of 10000ms exceeded
+2016-01-27 18:31:58,442 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x152821814e90003, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-27 18:31:58,442 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /127.0.0.1:53834 which had sessionid 0x152821814e90003
+2016-01-27 18:31:58,442 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x152821814e90000, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-27 18:31:58,442 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /0:0:0:0:0:0:0:1:53829 which had sessionid 0x152821814e90000
+2016-01-27 18:31:58,443 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x152821814e90004, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-27 18:31:58,443 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /127.0.0.1:53835 which had sessionid 0x152821814e90004
+2016-01-27 18:31:58,443 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x152821814e90005, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-27 18:31:58,443 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /0:0:0:0:0:0:0:1:53836 which had sessionid 0x152821814e90005
+2016-01-27 18:31:58,444 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x152821814e90001, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-27 18:31:58,444 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /127.0.0.1:53831 which had sessionid 0x152821814e90001
+2016-01-27 18:31:58,444 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /0:0:0:0:0:0:0:1:54822
+2016-01-27 18:31:58,444 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x152821814e90006, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-27 18:31:58,444 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /127.0.0.1:53901 which had sessionid 0x152821814e90006
+2016-01-27 18:31:58,445 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:54823
+2016-01-27 18:31:58,446 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to renew session 0x152821814e90003 at /0:0:0:0:0:0:0:1:54822
+2016-01-27 18:31:58,439 INFO  [RS:0;192.168.1.124:53830-SendThread(localhost:2181)] zookeeper.ClientCnxn: Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-01-27 18:31:58,442 INFO  [SessionTracker] server.ZooKeeperServer: Expiring session 0x152821814e90001, timeout of 10000ms exceeded
+2016-01-27 18:31:58,450 INFO  [SessionTracker] server.ZooKeeperServer: Expiring session 0x152821814e90004, timeout of 10000ms exceeded
+2016-01-27 18:31:58,450 INFO  [SessionTracker] server.ZooKeeperServer: Expiring session 0x152821814e90006, timeout of 10000ms exceeded
+2016-01-27 18:31:58,450 INFO  [SessionTracker] server.ZooKeeperServer: Expiring session 0x152821814e90007, timeout of 40000ms exceeded
+2016-01-27 18:31:58,451 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Invalid session 0x152821814e90003 for client /0:0:0:0:0:0:0:1:54822, probably expired
+2016-01-27 18:31:58,452 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /0:0:0:0:0:0:0:1:54822 which had sessionid 0x152821814e90003
+2016-01-27 18:31:58,452 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to renew session 0x152821814e90000 at /127.0.0.1:54823
+2016-01-27 18:31:58,452 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Invalid session 0x152821814e90000 for client /127.0.0.1:54823, probably expired
+2016-01-27 18:31:58,452 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /0:0:0:0:0:0:0:1:54824
+2016-01-27 18:31:58,452 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /127.0.0.1:54823 which had sessionid 0x152821814e90000
+2016-01-27 18:31:58,452 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to renew session 0x152821814e90002 at /0:0:0:0:0:0:0:1:54824
+2016-01-27 18:31:58,453 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Invalid session 0x152821814e90002 for client /0:0:0:0:0:0:0:1:54824, probably expired
+2016-01-27 18:31:58,453 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /0:0:0:0:0:0:0:1:54824 which had sessionid 0x152821814e90002
+2016-01-27 18:31:58,454 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x152821814e90003
+2016-01-27 18:31:58,455 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x152821814e90002
+2016-01-27 18:31:58,455 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x152821814e90005
+2016-01-27 18:31:58,455 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x152821814e90000
+2016-01-27 18:31:58,455 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x152821814e90001
+2016-01-27 18:31:58,455 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x152821814e90004
+2016-01-27 18:31:58,455 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x152821814e90006
+2016-01-27 18:31:58,455 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x152821814e90007
+2016-01-27 18:31:58,455 INFO  [M:0;192.168.1.124:53765-SendThread(localhost:2181)] zookeeper.ClientCnxn: Unable to reconnect to ZooKeeper service, session 0x152821814e90003 has expired, closing socket connection
+2016-01-27 18:31:58,456 WARN  [M:0;192.168.1.124:53765-EventThread] client.ConnectionManager$HConnectionImplementation: This client just lost it's session with ZooKeeper, closing it. It will be recreated next time someone needs it
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.connectionEvent(ZooKeeperWatcher.java:606)
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.process(ZooKeeperWatcher.java:517)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498)
+2016-01-27 18:31:58,456 INFO  [M:0;192.168.1.124:53765-EventThread] client.ConnectionManager$HConnectionImplementation: Closing zookeeper sessionid=0x152821814e90003
+2016-01-27 18:31:58,456 FATAL [main-EventThread] master.HMaster: Master server abort: loaded coprocessors are: [org.apache.hadoop.hbase.coprocessor.MultiRowMutationEndpoint]
+2016-01-27 18:31:58,456 FATAL [main-EventThread] master.HMaster: master:53765-0x152821814e90000, quorum=localhost:2181, baseZNode=/hbase master:53765-0x152821814e90000 received expired from ZooKeeper, aborting
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.connectionEvent(ZooKeeperWatcher.java:606)
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.process(ZooKeeperWatcher.java:517)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498)
+2016-01-27 18:31:58,457 WARN  [RS:0;192.168.1.124:53830-EventThread] client.ConnectionManager$HConnectionImplementation: This client just lost it's session with ZooKeeper, closing it. It will be recreated next time someone needs it
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.connectionEvent(ZooKeeperWatcher.java:606)
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.process(ZooKeeperWatcher.java:517)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498)
+2016-01-27 18:31:58,457 INFO  [RS:0;192.168.1.124:53830-EventThread] client.ConnectionManager$HConnectionImplementation: Closing zookeeper sessionid=0x152821814e90002
+2016-01-27 18:31:58,457 INFO  [RS:0;192.168.1.124:53830-EventThread] zookeeper.ClientCnxn: EventThread shut down
+2016-01-27 18:31:58,459 INFO  [main-EventThread] regionserver.HRegionServer: STOPPED: master:53765-0x152821814e90000, quorum=localhost:2181, baseZNode=/hbase master:53765-0x152821814e90000 received expired from ZooKeeper, aborting
+2016-01-27 18:31:58,459 INFO  [main-EventThread] zookeeper.ClientCnxn: EventThread shut down
+2016-01-27 18:31:58,455 INFO  [RS:0;192.168.1.124:53830-SendThread(localhost:2181)] zookeeper.ClientCnxn: Unable to reconnect to ZooKeeper service, session 0x152821814e90002 has expired, closing socket connection
+2016-01-27 18:31:58,459 WARN  [M:0;192.168.1.124:53765] util.Sleeper: We slept 2946845ms instead of 3000ms, this is likely due to a long garbage collecting pause and it's usually bad, see http://hbase.apache.org/book.html#trouble.rs.runtime.zkexpired
+2016-01-27 18:31:58,459 INFO  [M:0;192.168.1.124:53765] regionserver.HRegionServer: Stopping infoServer
+2016-01-27 18:31:58,456 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Unable to reconnect to ZooKeeper service, session 0x152821814e90000 has expired, closing socket connection
+2016-01-27 18:31:58,456 INFO  [M:0;192.168.1.124:53765-EventThread] zookeeper.ClientCnxn: EventThread shut down
+2016-01-27 18:31:58,456 INFO  [SyncThread:0] server.NIOServerCnxn: Closed socket connection for client /0:0:0:0:0:0:0:1:55880 which had sessionid 0x152821814e90007
+2016-01-27 18:31:58,461 INFO  [M:0;192.168.1.124:53765] mortbay.log: Stopped SelectChannelConnector@0.0.0.0:16010
+2016-01-27 18:31:58,463 INFO  [M:0;192.168.1.124:53765] procedure2.ProcedureExecutor: Stopping the procedure executor
+2016-01-27 18:31:58,463 INFO  [M:0;192.168.1.124:53765] wal.WALProcedureStore: Stopping the WAL Procedure Store
+2016-01-27 18:31:58,469 INFO  [M:0;192.168.1.124:53765] regionserver.HRegionServer: stopping server 192.168.1.124,53765,1453881563009
+2016-01-27 18:31:58,469 INFO  [M:0;192.168.1.124:53765] regionserver.HRegionServer: stopping server 192.168.1.124,53765,1453881563009; all regions closed.
+2016-01-27 18:31:58,469 INFO  [M:0;192.168.1.124:53765] hbase.ChoreService: Chore service for: 192.168.1.124,53765,1453881563009 had [[ScheduledChore: Name: CatalogJanitor-192.168.1.124:53765 Period: 300000 Unit: MILLISECONDS], [ScheduledChore: Name: HFileCleaner Period: 60000 Unit: MILLISECONDS], [ScheduledChore: Name: 192.168.1.124,53765,1453881563009-BalancerChore Period: 300000 Unit: MILLISECONDS], [ScheduledChore: Name: 192.168.1.124,53765,1453881563009-ClusterStatusChore Period: 60000 Unit: MILLISECONDS], [ScheduledChore: Name: LogsCleaner Period: 60000 Unit: MILLISECONDS]] on shutdown
+2016-01-27 18:31:58,470 WARN  [M:0;192.168.1.124:53765] zookeeper.RecoverableZooKeeper: Possibly transient ZooKeeper, quorum=localhost:2181, exception=org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/master
+2016-01-27 18:31:58,561 INFO  [192.168.1.124:53765.activeMasterManager-SendThread(localhost:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-01-27 18:31:58,562 INFO  [192.168.1.124:53765.activeMasterManager-SendThread(localhost:2181)] zookeeper.ClientCnxn: Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-01-27 18:31:58,562 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:54825
+2016-01-27 18:31:58,562 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to renew session 0x152821814e90005 at /127.0.0.1:54825
+2016-01-27 18:31:58,562 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Invalid session 0x152821814e90005 for client /127.0.0.1:54825, probably expired
+2016-01-27 18:31:58,562 INFO  [192.168.1.124:53765.activeMasterManager-SendThread(localhost:2181)] zookeeper.ClientCnxn: Unable to reconnect to ZooKeeper service, session 0x152821814e90005 has expired, closing socket connection
+2016-01-27 18:31:58,562 INFO  [192.168.1.124:53765.activeMasterManager-EventThread] zookeeper.ClientCnxn: EventThread shut down
+2016-01-27 18:31:58,562 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /127.0.0.1:54825 which had sessionid 0x152821814e90005
+2016-01-27 18:31:58,739 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:54826
+2016-01-27 18:31:58,739 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to renew session 0x152821814e90007 at /127.0.0.1:54826
+2016-01-27 18:31:58,739 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Invalid session 0x152821814e90007 for client /127.0.0.1:54826, probably expired
+2016-01-27 18:31:58,739 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /127.0.0.1:54826 which had sessionid 0x152821814e90007
+2016-01-27 18:31:58,880 INFO  [192.168.1.124:53765.activeMasterManager-SendThread(localhost:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-01-27 18:31:58,880 INFO  [192.168.1.124:53765.activeMasterManager-SendThread(localhost:2181)] zookeeper.ClientCnxn: Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-01-27 18:31:58,880 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /0:0:0:0:0:0:0:1:54827
+2016-01-27 18:31:58,881 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to renew session 0x152821814e90004 at /0:0:0:0:0:0:0:1:54827
+2016-01-27 18:31:58,881 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Invalid session 0x152821814e90004 for client /0:0:0:0:0:0:0:1:54827, probably expired
+2016-01-27 18:31:58,881 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /0:0:0:0:0:0:0:1:54827 which had sessionid 0x152821814e90004
+2016-01-27 18:31:58,881 INFO  [192.168.1.124:53765.activeMasterManager-SendThread(localhost:2181)] zookeeper.ClientCnxn: Unable to reconnect to ZooKeeper service, session 0x152821814e90004 has expired, closing socket connection
+2016-01-27 18:31:58,881 WARN  [192.168.1.124:53765.activeMasterManager-EventThread] client.ConnectionManager$HConnectionImplementation: This client just lost it's session with ZooKeeper, closing it. It will be recreated next time someone needs it
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.connectionEvent(ZooKeeperWatcher.java:606)
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.process(ZooKeeperWatcher.java:517)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498)
+2016-01-27 18:31:58,881 INFO  [192.168.1.124:53765.activeMasterManager-EventThread] client.ConnectionManager$HConnectionImplementation: Closing zookeeper sessionid=0x152821814e90004
+2016-01-27 18:31:58,881 INFO  [192.168.1.124:53765.activeMasterManager-EventThread] zookeeper.ClientCnxn: EventThread shut down
+2016-01-27 18:31:59,212 INFO  [RS:0;192.168.1.124:53830-SendThread(localhost:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-01-27 18:31:59,212 INFO  [RS:0;192.168.1.124:53830-SendThread(localhost:2181)] zookeeper.ClientCnxn: Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-01-27 18:31:59,212 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /0:0:0:0:0:0:0:1:54830
+2016-01-27 18:31:59,213 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to renew session 0x152821814e90006 at /0:0:0:0:0:0:0:1:54830
+2016-01-27 18:31:59,213 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Invalid session 0x152821814e90006 for client /0:0:0:0:0:0:0:1:54830, probably expired
+2016-01-27 18:31:59,213 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /0:0:0:0:0:0:0:1:54830 which had sessionid 0x152821814e90006
+2016-01-27 18:31:59,213 INFO  [RS:0;192.168.1.124:53830-SendThread(localhost:2181)] zookeeper.ClientCnxn: Unable to reconnect to ZooKeeper service, session 0x152821814e90006 has expired, closing socket connection
+2016-01-27 18:31:59,213 WARN  [RS:0;192.168.1.124:53830-EventThread] client.ConnectionManager$HConnectionImplementation: This client just lost it's session with ZooKeeper, closing it. It will be recreated next time someone needs it
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.connectionEvent(ZooKeeperWatcher.java:606)
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.process(ZooKeeperWatcher.java:517)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498)
+2016-01-27 18:31:59,213 INFO  [RS:0;192.168.1.124:53830-EventThread] client.ConnectionManager$HConnectionImplementation: Closing zookeeper sessionid=0x152821814e90006
+2016-01-27 18:31:59,213 INFO  [RS:0;192.168.1.124:53830-EventThread] zookeeper.ClientCnxn: EventThread shut down
+2016-01-27 18:31:59,304 INFO  [192.168.1.124,53765,1453881563009_splitLogManager__ChoreService_1] master.SplitLogManager$TimeoutMonitor: Chore: SplitLogManager Timeout Monitor was stopped
+2016-01-27 18:31:59,304 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-01-27 18:31:59,305 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-01-27 18:31:59,305 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /0:0:0:0:0:0:0:1:54832
+2016-01-27 18:31:59,305 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to renew session 0x152821814e90001 at /0:0:0:0:0:0:0:1:54832
+2016-01-27 18:31:59,305 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Invalid session 0x152821814e90001 for client /0:0:0:0:0:0:0:1:54832, probably expired
+2016-01-27 18:31:59,305 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /0:0:0:0:0:0:0:1:54832 which had sessionid 0x152821814e90001
+2016-01-27 18:31:59,305 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Unable to reconnect to ZooKeeper service, session 0x152821814e90001 has expired, closing socket connection
+2016-01-27 18:31:59,305 FATAL [main-EventThread] regionserver.HRegionServer: ABORTING region server 192.168.1.124,53830,1453881563658: regionserver:53830-0x152821814e90001, quorum=localhost:2181, baseZNode=/hbase regionserver:53830-0x152821814e90001 received expired from ZooKeeper, aborting
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.connectionEvent(ZooKeeperWatcher.java:606)
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.process(ZooKeeperWatcher.java:517)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498)
+2016-01-27 18:31:59,306 FATAL [main-EventThread] regionserver.HRegionServer: RegionServer abort: loaded coprocessors are: [org.apache.hadoop.hbase.coprocessor.MultiRowMutationEndpoint]
+2016-01-27 18:31:59,324 INFO  [main-EventThread] regionserver.HRegionServer: Dump of metrics as JSON on abort: {
+  "beans" : [ {
+    "name" : "java.lang:type=Memory",
+    "modelerType" : "sun.management.MemoryImpl",
+    "HeapMemoryUsage" : {
+      "committed" : 259522560,
+      "init" : 268435456,
+      "max" : 4225236992,
+      "used" : 85465576
+    },
+    "ObjectPendingFinalizationCount" : 0,
+    "NonHeapMemoryUsage" : {
+      "committed" : 56983552,
+      "init" : 2555904,
+      "max" : -1,
+      "used" : 56125104
+    },
+    "Verbose" : false,
+    "ObjectName" : "java.lang:type=Memory"
+  } ],
+  "beans" : [ {
+    "name" : "Hadoop:service=HBase,name=RegionServer,sub=IPC",
+    "modelerType" : "RegionServer,sub=IPC",
+    "tag.Context" : "regionserver",
+    "tag.Hostname" : "LinePlusui-MacBook-Pro.local",
+    "queueSize" : 0,
+    "numCallsInGeneralQueue" : 0,
+    "numCallsInReplicationQueue" : 0,
+    "numCallsInPriorityQueue" : 0,
+    "numOpenConnections" : 0,
+    "numActiveHandler" : 0,
+    "receivedBytes" : 6724,
+    "exceptions.RegionMovedException" : 0,
+    "authenticationSuccesses" : 0,
+    "authorizationFailures" : 0,
+    "TotalCallTime_num_ops" : 59,
+    "TotalCallTime_min" : 0,
+    "TotalCallTime_max" : 21,
+    "TotalCallTime_mean" : 1.4745762711864407,
+    "TotalCallTime_median" : 1.0,
+    "TotalCallTime_75th_percentile" : 1.0,
+    "TotalCallTime_95th_percentile" : 10.0,
+    "TotalCallTime_99th_percentile" : 21.0,
+    "exceptions.RegionTooBusyException" : 0,
+    "exceptions.FailedSanityCheckException" : 0,
+    "exceptions.UnknownScannerException" : 0,
+    "exceptions.OutOfOrderScannerNextException" : 0,
+    "exceptions" : 0,
+    "ProcessCallTime_num_ops" : 59,
+    "ProcessCallTime_min" : 0,
+    "ProcessCallTime_max" : 15,
+    "ProcessCallTime_mean" : 1.2033898305084745,
+    "ProcessCallTime_median" : 0.0,
+    "ProcessCallTime_75th_percentile" : 1.0,
+    "ProcessCallTime_95th_percentile" : 10.0,
+    "ProcessCallTime_99th_percentile" : 15.0,
+    "exceptions.NotServingRegionException" : 0,
+    "authorizationSuccesses" : 11,
+    "sentBytes" : 9092,
+    "QueueCallTime_num_ops" : 59,
+    "QueueCallTime_min" : 0,
+    "QueueCallTime_max" : 7,
+    "QueueCallTime_mean" : 0.2711864406779661,
+    "QueueCallTime_median" : 0.0,
+    "QueueCallTime_75th_percentile" : 0.0,
+    "QueueCallTime_95th_percentile" : 1.0,
+    "QueueCallTime_99th_percentile" : 7.0,
+    "authenticationFailures" : 0
+  } ],
+  "beans" : [ {
+    "name" : "Hadoop:service=HBase,name=RegionServer,sub=Replication",
+    "modelerType" : "RegionServer,sub=Replication",
+    "tag.Context" : "regionserver",
+    "tag.Hostname" : "LinePlusui-MacBook-Pro.local",
+    "sink.appliedOps" : 0,
+    "sink.ageOfLastAppliedOp" : 0,
+    "sink.appliedBatches" : 0
+  } ],
+  "beans" : [ {
+    "name" : "Hadoop:service=HBase,name=RegionServer,sub=Server",
+    "modelerType" : "RegionServer,sub=Server",
+    "tag.zookeeperQuorum" : "localhost:2181",
+    "tag.serverName" : "192.168.1.124,53830,1453881563658",
+    "tag.clusterId" : "b901efbd-174b-45e8-b209-16d79cecccff",
+    "tag.Context" : "regionserver",
+    "tag.Hostname" : "LinePlusui-MacBook-Pro.local",
+    "regionCount" : 3,
+    "storeCount" : 3,
+    "hlogFileCount" : 2,
+    "hlogFileSize" : 0,
+    "storeFileCount" : 1,
+    "memStoreSize" : 1568,
+    "storeFileSize" : 5753,
+    "regionServerStartTime" : 1453881563658,
+    "totalRequestCount" : 59,
+    "readRequestCount" : 23,
+    "writeRequestCount" : 6,
+    "checkMutateFailedCount" : 0,
+    "checkMutatePassedCount" : 0,
+    "storeFileIndexSize" : 464,
+    "staticIndexSize" : 103,
+    "staticBloomSize" : 0,
+    "mutationsWithoutWALCount" : 0,
+    "mutationsWithoutWALSize" : 0,
+    "percentFilesLocal" : 0,
+    "percentFilesLocalSecondaryRegions" : 0,
+    "splitQueueLength" : 0,
+    "compactionQueueLength" : 0,
+    "flushQueueLength" : 1,
+    "blockCacheFreeSize" : 1688358904,
+    "blockCacheCount" : 1,
+    "blockCacheSize" : 1735944,
+    "blockCacheHitCount" : 6,
+    "blockCacheMissCount" : 1,
+    "blockCacheEvictionCount" : 0,
+    "blockCacheCountHitPercent" : 85.0,
+    "blockCacheExpressHitPercent" : 85,
+    "updatesBlockedTime" : 0,
+    "flushedCellsCount" : 8,
+    "compactedCellsCount" : 0,
+    "majorCompactedCellsCount" : 0,
+    "flushedCellsSize" : 1952,
+    "compactedCellsSize" : 0,
+    "majorCompactedCellsSize" : 0,
+    "blockedRequestCount" : 0,
+    "Mutate_num_ops" : 6,
+    "Mutate_min" : 0,
+    "Mutate_max" : 9,
+    "Mutate_mean" : 2.3333333333333335,
+    "Mutate_median" : 1.0,
+    "Mutate_75th_percentile" : 3.75,
+    "Mutate_95th_percentile" : 9.0,
+    "Mutate_99th_percentile" : 9.0,
+    "slowAppendCount" : 0,
+    "slowDeleteCount" : 0,
+    "Increment_num_ops" : 0,
+    "Increment_min" : 0,
+    "Increment_max" : 0,
+    "Increment_mean" : 0.0,
+    "Increment_median" : 0.0,
+    "Increment_75th_percentile" : 0.0,
+    "Increment_95th_percentile" : 0.0,
+    "Increment_99th_percentile" : 0.0,
+    "Replay_num_ops" : 0,
+    "Replay_min" : 0,
+    "Replay_max" : 0,
+    "Replay_mean" : 0.0,
+    "Replay_median" : 0.0,
+    "Replay_75th_percentile" : 0.0,
+    "Replay_95th_percentile" : 0.0,
+    "Replay_99th_percentile" : 0.0,
+    "FlushTime_num_ops" : 1,
+    "FlushTime_min" : 13303,
+    "FlushTime_max" : 13303,
+    "FlushTime_mean" : 13303.0,
+    "FlushTime_median" : 13303.0,
+    "FlushTime_75th_percentile" : 13303.0,
+    "FlushTime_95th_percentile" : 13303.0,
+    "FlushTime_99th_percentile" : 13303.0,
+    "Delete_num_ops" : 0,
+    "Delete_min" : 0,
+    "Delete_max" : 0,
+    "Delete_mean" : 0.0,
+    "Delete_median" : 0.0,
+    "Delete_75th_percentile" : 0.0,
+    "Delete_95th_percentile" : 0.0,
+    "Delete_99th_percentile" : 0.0,
+    "splitRequestCount" : 0,
+    "splitSuccessCount" : 0,
+    "slowGetCount" : 0,
+    "Get_num_ops" : 4,
+    "Get_min" : 0,
+    "Get_max" : 1,
+    "Get_mean" : 0.5,
+    "Get_median" : 0.5,
+    "Get_75th_percentile" : 1.0,
+    "Get_95th_percentile" : 1.0,
+    "Get_99th_percentile" : 1.0,
+    "ScanNext_num_ops" : 16,
+    "ScanNext_min" : 0,
+    "ScanNext_max" : 951,
+    "ScanNext_mean" : 510.5625,
+    "ScanNext_median" : 713.0,
+    "ScanNext_75th_percentile" : 951.0,
+    "ScanNext_95th_percentile" : 951.0,
+    "ScanNext_99th_percentile" : 951.0,
+    "slowPutCount" : 0,
+    "slowIncrementCount" : 0,
+    "Append_num_ops" : 0,
+    "Append_min" : 0,
+    "Append_max" : 0,
+    "Append_mean" : 0.0,
+    "Append_median" : 0.0,
+    "Append_75th_percentile" : 0.0,
+    "Append_95th_percentile" : 0.0,
+    "Append_99th_percentile" : 0.0,
+    "SplitTime_num_ops" : 0,
+    "SplitTime_min" : 0,
+    "SplitTime_max" : 0,
+    "SplitTime_mean" : 0.0,
+    "SplitTime_median" : 0.0,
+    "SplitTime_75th_percentile" : 0.0,
+    "SplitTime_95th_percentile" : 0.0,
+    "SplitTime_99th_percentile" : 0.0
+  } ]
+}
+2016-01-27 18:31:59,327 ERROR [PriorityRpcServer.handler=2,queue=0,port=53765] master.MasterRpcServices: Region server 192.168.1.124,53830,1453881563658 reported a fatal error:
+ABORTING region server 192.168.1.124,53830,1453881563658: regionserver:53830-0x152821814e90001, quorum=localhost:2181, baseZNode=/hbase regionserver:53830-0x152821814e90001 received expired from ZooKeeper, aborting
+Cause:
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.connectionEvent(ZooKeeperWatcher.java:606)
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.process(ZooKeeperWatcher.java:517)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498)
+
+2016-01-27 18:31:59,328 INFO  [main-EventThread] regionserver.HRegionServer: STOPPED: regionserver:53830-0x152821814e90001, quorum=localhost:2181, baseZNode=/hbase regionserver:53830-0x152821814e90001 received expired from ZooKeeper, aborting
+2016-01-27 18:31:59,329 INFO  [main-EventThread] zookeeper.ClientCnxn: EventThread shut down
+2016-01-27 18:31:59,329 INFO  [RS:0;192.168.1.124:53830] regionserver.SplitLogWorker: Sending interrupt to stop the worker thread
+2016-01-27 18:31:59,329 INFO  [RS:0;192.168.1.124:53830] regionserver.HRegionServer: Stopping infoServer
+2016-01-27 18:31:59,329 INFO  [SplitLogWorker-192.168.1.124:53830] regionserver.SplitLogWorker: SplitLogWorker interrupted. Exiting. 
+2016-01-27 18:31:59,329 INFO  [SplitLogWorker-192.168.1.124:53830] regionserver.SplitLogWorker: SplitLogWorker 192.168.1.124,53830,1453881563658 exiting
+2016-01-27 18:31:59,329 INFO  [RS:0;192.168.1.124:53830] mortbay.log: Stopped SelectChannelConnector@0.0.0.0:0
+2016-01-27 18:31:59,433 INFO  [RS:0;192.168.1.124:53830] regionserver.HeapMemoryManager: Stoping HeapMemoryTuner chore.
+2016-01-27 18:31:59,433 INFO  [MemStoreFlusher.1] regionserver.MemStoreFlusher: MemStoreFlusher.1 exiting
+2016-01-27 18:31:59,433 INFO  [MemStoreFlusher.0] regionserver.MemStoreFlusher: MemStoreFlusher.0 exiting
+2016-01-27 18:31:59,433 INFO  [RS:0;192.168.1.124:53830] flush.RegionServerFlushTableProcedureManager: Stopping region server flush procedure manager abruptly.
+2016-01-27 18:31:59,433 INFO  [RS:0;192.168.1.124:53830] snapshot.RegionServerSnapshotManager: Stopping RegionServerSnapshotManager abruptly.
+2016-01-27 18:31:59,436 INFO  [RS:0;192.168.1.124:53830] regionserver.HRegionServer: aborting server 192.168.1.124,53830,1453881563658
+2016-01-27 18:31:59,436 INFO  [RS:0;192.168.1.124:53830] regionserver.CompactSplitThread: Waiting for Split Thread to finish...
+2016-01-27 18:31:59,436 INFO  [RS:0;192.168.1.124:53830] regionserver.CompactSplitThread: Waiting for Merge Thread to finish...
+2016-01-27 18:31:59,436 INFO  [RS:0;192.168.1.124:53830] regionserver.CompactSplitThread: Waiting for Large Compaction Thread to finish...
+2016-01-27 18:31:59,436 INFO  [RS:0;192.168.1.124:53830] regionserver.CompactSplitThread: Waiting for Small Compaction Thread to finish...
+2016-01-27 18:31:59,437 INFO  [RS:0;192.168.1.124:53830] regionserver.HRegionServer: Waiting on 3 regions to close
+2016-01-27 18:31:59,437 INFO  [StoreCloserThread-hbase:namespace,,1453881569761.3cf8d3b6eb1e7095ba25b73b439244d7.-1] regionserver.HStore: Closed info
+2016-01-27 18:31:59,437 INFO  [StoreCloserThread-test,,1453881603473.15e6afd94a29b94984ff36c2cfd5db5e.-1] regionserver.HStore: Closed cf
+2016-01-27 18:31:59,437 ERROR [RS_CLOSE_REGION-192.168.1.124:53830-0] regionserver.HRegion: Memstore size is 344
+2016-01-27 18:31:59,440 INFO  [StoreCloserThread-hbase:meta,,1.1588230740-1] regionserver.HStore: Closed info
+2016-01-27 18:31:59,442 INFO  [RS_CLOSE_META-192.168.1.124:53830-0] regionserver.HRegion: Closed hbase:meta,,1.1588230740
+2016-01-27 18:31:59,442 INFO  [RS_CLOSE_REGION-192.168.1.124:53830-0] regionserver.HRegion: Closed hbase:namespace,,1453881569761.3cf8d3b6eb1e7095ba25b73b439244d7.
+2016-01-27 18:31:59,442 INFO  [RS_CLOSE_REGION-192.168.1.124:53830-1] regionserver.HRegion: Closed test,,1453881603473.15e6afd94a29b94984ff36c2cfd5db5e.
+2016-01-27 18:31:59,474 WARN  [M:0;192.168.1.124:53765] zookeeper.RecoverableZooKeeper: Possibly transient ZooKeeper, quorum=localhost:2181, exception=org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/master
+2016-01-27 18:31:59,507 INFO  [regionserver//192.168.1.124:0.logRoller] regionserver.LogRoller: LogRoller exiting.
+2016-01-27 18:31:59,507 INFO  [regionserver//192.168.1.124:0.leaseChecker] regionserver.Leases: regionserver//192.168.1.124:0.leaseChecker closing leases
+2016-01-27 18:31:59,507 INFO  [regionserver//192.168.1.124:0.leaseChecker] regionserver.Leases: regionserver//192.168.1.124:0.leaseChecker closed leases
+2016-01-27 18:31:59,640 INFO  [RS:0;192.168.1.124:53830] regionserver.HRegionServer: stopping server 192.168.1.124,53830,1453881563658; all regions closed.
+2016-01-27 18:31:59,746 INFO  [RS:0;192.168.1.124:53830] regionserver.Leases: RS:0;192.168.1.124:53830 closing leases
+2016-01-27 18:31:59,747 INFO  [RS:0;192.168.1.124:53830] regionserver.Leases: RS:0;192.168.1.124:53830 closed leases
+2016-01-27 18:31:59,747 INFO  [RS:0;192.168.1.124:53830] hbase.ChoreService: Chore service for: 192.168.1.124,53830,1453881563658 had [[ScheduledChore: Name: MovedRegionsCleaner for region 192.168.1.124,53830,1453881563658 Period: 120000 Unit: MILLISECONDS], [ScheduledChore: Name: 192.168.1.124,53830,1453881563658-MemstoreFlusherChore Period: 10000 Unit: MILLISECONDS]] on shutdown
+2016-01-27 18:32:01,478 WARN  [M:0;192.168.1.124:53765] zookeeper.RecoverableZooKeeper: Possibly transient ZooKeeper, quorum=localhost:2181, exception=org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/master
+2016-01-27 18:32:04,885 INFO  [RS_OPEN_META-192.168.1.124:53830-0-MetaLogRoller] regionserver.LogRoller: LogRoller exiting.
+2016-01-27 18:32:04,886 WARN  [RS:0;192.168.1.124:53830] zookeeper.RecoverableZooKeeper: Possibly transient ZooKeeper, quorum=localhost:2181, exception=org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/replication/rs/192.168.1.124,53830,1453881563658
+2016-01-27 18:32:05,481 WARN  [M:0;192.168.1.124:53765] zookeeper.RecoverableZooKeeper: Possibly transient ZooKeeper, quorum=localhost:2181, exception=org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/master
+2016-01-27 18:32:05,888 WARN  [RS:0;192.168.1.124:53830] zookeeper.RecoverableZooKeeper: Possibly transient ZooKeeper, quorum=localhost:2181, exception=org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/replication/rs/192.168.1.124,53830,1453881563658
+2016-01-27 18:32:07,892 WARN  [RS:0;192.168.1.124:53830] zookeeper.RecoverableZooKeeper: Possibly transient ZooKeeper, quorum=localhost:2181, exception=org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/replication/rs/192.168.1.124,53830,1453881563658
+2016-01-27 18:32:11,894 WARN  [RS:0;192.168.1.124:53830] zookeeper.RecoverableZooKeeper: Possibly transient ZooKeeper, quorum=localhost:2181, exception=org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/replication/rs/192.168.1.124,53830,1453881563658
+2016-01-27 18:32:13,485 WARN  [M:0;192.168.1.124:53765] zookeeper.RecoverableZooKeeper: Possibly transient ZooKeeper, quorum=localhost:2181, exception=org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/master
+2016-01-27 18:32:13,485 ERROR [M:0;192.168.1.124:53765] zookeeper.RecoverableZooKeeper: ZooKeeper getData failed after 4 attempts
+2016-01-27 18:32:13,485 WARN  [M:0;192.168.1.124:53765] zookeeper.ZKUtil: master:53765-0x152821814e90000, quorum=localhost:2181, baseZNode=/hbase Unable to get data of znode /hbase/master
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/master
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getData(RecoverableZooKeeper.java:359)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.getData(ZKUtil.java:745)
+	at org.apache.hadoop.hbase.zookeeper.MasterAddressTracker.getMasterAddress(MasterAddressTracker.java:148)
+	at org.apache.hadoop.hbase.master.ActiveMasterManager.stop(ActiveMasterManager.java:267)
+	at org.apache.hadoop.hbase.master.HMaster.stopServiceThreads(HMaster.java:1145)
+	at org.apache.hadoop.hbase.regionserver.HRegionServer.run(HRegionServer.java:1071)
+	at org.apache.hadoop.hbase.master.HMasterCommandLine$LocalHMaster.run(HMasterCommandLine.java:312)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-27 18:32:13,485 ERROR [M:0;192.168.1.124:53765] zookeeper.ZooKeeperWatcher: master:53765-0x152821814e90000, quorum=localhost:2181, baseZNode=/hbase Received unexpected KeeperException, re-throwing exception
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/master
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getData(RecoverableZooKeeper.java:359)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.getData(ZKUtil.java:745)
+	at org.apache.hadoop.hbase.zookeeper.MasterAddressTracker.getMasterAddress(MasterAddressTracker.java:148)
+	at org.apache.hadoop.hbase.master.ActiveMasterManager.stop(ActiveMasterManager.java:267)
+	at org.apache.hadoop.hbase.master.HMaster.stopServiceThreads(HMaster.java:1145)
+	at org.apache.hadoop.hbase.regionserver.HRegionServer.run(HRegionServer.java:1071)
+	at org.apache.hadoop.hbase.master.HMasterCommandLine$LocalHMaster.run(HMasterCommandLine.java:312)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-27 18:32:13,486 ERROR [M:0;192.168.1.124:53765] master.ActiveMasterManager: master:53765-0x152821814e90000, quorum=localhost:2181, baseZNode=/hbase Error deleting our own master address node
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/master
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getData(RecoverableZooKeeper.java:359)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.getData(ZKUtil.java:745)
+	at org.apache.hadoop.hbase.zookeeper.MasterAddressTracker.getMasterAddress(MasterAddressTracker.java:148)
+	at org.apache.hadoop.hbase.master.ActiveMasterManager.stop(ActiveMasterManager.java:267)
+	at org.apache.hadoop.hbase.master.HMaster.stopServiceThreads(HMaster.java:1145)
+	at org.apache.hadoop.hbase.regionserver.HRegionServer.run(HRegionServer.java:1071)
+	at org.apache.hadoop.hbase.master.HMasterCommandLine$LocalHMaster.run(HMasterCommandLine.java:312)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-27 18:32:13,486 INFO  [M:0;192.168.1.124:53765] hbase.ChoreService: Chore service for: 192.168.1.124,53765,1453881563009_splitLogManager_ had [] on shutdown
+2016-01-27 18:32:13,486 INFO  [M:0;192.168.1.124:53765] flush.MasterFlushTableProcedureManager: stop: server shutting down.
+2016-01-27 18:32:13,486 INFO  [M:0;192.168.1.124:53765] ipc.RpcServer: Stopping server on 53765
+2016-01-27 18:32:13,486 INFO  [RpcServer.listener,port=53765] ipc.RpcServer: RpcServer.listener,port=53765: stopping
+2016-01-27 18:32:13,487 INFO  [RpcServer.responder] ipc.RpcServer: RpcServer.responder: stopped
+2016-01-27 18:32:13,487 INFO  [RpcServer.responder] ipc.RpcServer: RpcServer.responder: stopping
+2016-01-27 18:32:13,488 WARN  [M:0;192.168.1.124:53765] zookeeper.RecoverableZooKeeper: Possibly transient ZooKeeper, quorum=localhost:2181, exception=org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/rs/192.168.1.124,53765,1453881563009
+2016-01-27 18:32:14,494 WARN  [M:0;192.168.1.124:53765] zookeeper.RecoverableZooKeeper: Possibly transient ZooKeeper, quorum=localhost:2181, exception=org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/rs/192.168.1.124,53765,1453881563009
+2016-01-27 18:32:16,494 WARN  [M:0;192.168.1.124:53765] zookeeper.RecoverableZooKeeper: Possibly transient ZooKeeper, quorum=localhost:2181, exception=org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/rs/192.168.1.124,53765,1453881563009
+2016-01-27 18:32:19,895 WARN  [RS:0;192.168.1.124:53830] zookeeper.RecoverableZooKeeper: Possibly transient ZooKeeper, quorum=localhost:2181, exception=org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/replication/rs/192.168.1.124,53830,1453881563658
+2016-01-27 18:32:19,895 ERROR [RS:0;192.168.1.124:53830] zookeeper.RecoverableZooKeeper: ZooKeeper getChildren failed after 4 attempts
+2016-01-27 18:32:19,895 WARN  [RS:0;192.168.1.124:53830] zookeeper.ZKUtil: regionserver:53830-0x152821814e90001, quorum=localhost:2181, baseZNode=/hbase Unable to list children of znode /hbase/replication/rs/192.168.1.124,53830,1453881563658 
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/replication/rs/192.168.1.124,53830,1453881563658
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:1472)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getChildren(RecoverableZooKeeper.java:295)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.listChildrenAndWatchForNewChildren(ZKUtil.java:578)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.listChildrenAndWatchThem(ZKUtil.java:606)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.listChildrenBFSAndWatchThem(ZKUtil.java:1585)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.deleteNodeRecursivelyMultiOrSequential(ZKUtil.java:1507)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.deleteNodeRecursively(ZKUtil.java:1389)
+	at org.apache.hadoop.hbase.replication.ReplicationQueuesZKImpl.removeAllQueues(ReplicationQueuesZKImpl.java:187)
+	at org.apache.hadoop.hbase.replication.regionserver.ReplicationSourceManager.join(ReplicationSourceManager.java:292)
+	at org.apache.hadoop.hbase.replication.regionserver.Replication.join(Replication.java:180)
+	at org.apache.hadoop.hbase.replication.regionserver.Replication.stopReplicationService(Replication.java:172)
+	at org.apache.hadoop.hbase.regionserver.HRegionServer.stopServiceThreads(HRegionServer.java:2137)
+	at org.apache.hadoop.hbase.regionserver.HRegionServer.run(HRegionServer.java:1071)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-27 18:32:19,895 ERROR [RS:0;192.168.1.124:53830] zookeeper.ZooKeeperWatcher: regionserver:53830-0x152821814e90001, quorum=localhost:2181, baseZNode=/hbase Received unexpected KeeperException, re-throwing exception
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/replication/rs/192.168.1.124,53830,1453881563658
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:1472)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getChildren(RecoverableZooKeeper.java:295)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.listChildrenAndWatchForNewChildren(ZKUtil.java:578)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.listChildrenAndWatchThem(ZKUtil.java:606)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.listChildrenBFSAndWatchThem(ZKUtil.java:1585)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.deleteNodeRecursivelyMultiOrSequential(ZKUtil.java:1507)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.deleteNodeRecursively(ZKUtil.java:1389)
+	at org.apache.hadoop.hbase.replication.ReplicationQueuesZKImpl.removeAllQueues(ReplicationQueuesZKImpl.java:187)
+	at org.apache.hadoop.hbase.replication.regionserver.ReplicationSourceManager.join(ReplicationSourceManager.java:292)
+	at org.apache.hadoop.hbase.replication.regionserver.Replication.join(Replication.java:180)
+	at org.apache.hadoop.hbase.replication.regionserver.Replication.stopReplicationService(Replication.java:172)
+	at org.apache.hadoop.hbase.regionserver.HRegionServer.stopServiceThreads(HRegionServer.java:2137)
+	at org.apache.hadoop.hbase.regionserver.HRegionServer.run(HRegionServer.java:1071)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-27 18:32:19,896 INFO  [RS:0;192.168.1.124:53830] ipc.RpcServer: Stopping server on 53830
+2016-01-27 18:32:19,896 INFO  [RpcServer.listener,port=53830] ipc.RpcServer: RpcServer.listener,port=53830: stopping
+2016-01-27 18:32:19,896 INFO  [RpcServer.responder] ipc.RpcServer: RpcServer.responder: stopped
+2016-01-27 18:32:19,896 INFO  [RpcServer.responder] ipc.RpcServer: RpcServer.responder: stopping
+2016-01-27 18:32:19,903 WARN  [RS:0;192.168.1.124:53830] zookeeper.RecoverableZooKeeper: Possibly transient ZooKeeper, quorum=localhost:2181, exception=org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/rs/192.168.1.124,53830,1453881563658
+2016-01-27 18:32:20,494 WARN  [M:0;192.168.1.124:53765] zookeeper.RecoverableZooKeeper: Possibly transient ZooKeeper, quorum=localhost:2181, exception=org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/rs/192.168.1.124,53765,1453881563009
+2016-01-27 18:32:20,905 WARN  [RS:0;192.168.1.124:53830] zookeeper.RecoverableZooKeeper: Possibly transient ZooKeeper, quorum=localhost:2181, exception=org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/rs/192.168.1.124,53830,1453881563658
+2016-01-27 18:32:22,911 WARN  [RS:0;192.168.1.124:53830] zookeeper.RecoverableZooKeeper: Possibly transient ZooKeeper, quorum=localhost:2181, exception=org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/rs/192.168.1.124,53830,1453881563658
+2016-01-27 18:32:26,912 WARN  [RS:0;192.168.1.124:53830] zookeeper.RecoverableZooKeeper: Possibly transient ZooKeeper, quorum=localhost:2181, exception=org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/rs/192.168.1.124,53830,1453881563658
+2016-01-27 18:32:28,496 WARN  [M:0;192.168.1.124:53765] zookeeper.RecoverableZooKeeper: Possibly transient ZooKeeper, quorum=localhost:2181, exception=org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/rs/192.168.1.124,53765,1453881563009
+2016-01-27 18:32:28,496 ERROR [M:0;192.168.1.124:53765] zookeeper.RecoverableZooKeeper: ZooKeeper delete failed after 4 attempts
+2016-01-27 18:32:28,496 WARN  [M:0;192.168.1.124:53765] regionserver.HRegionServer: Failed deleting my ephemeral node
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/rs/192.168.1.124,53765,1453881563009
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.delete(ZooKeeper.java:873)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.delete(RecoverableZooKeeper.java:178)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.deleteNode(ZKUtil.java:1345)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.deleteNode(ZKUtil.java:1334)
+	at org.apache.hadoop.hbase.regionserver.HRegionServer.deleteMyEphemeralNode(HRegionServer.java:1403)
+	at org.apache.hadoop.hbase.regionserver.HRegionServer.run(HRegionServer.java:1079)
+	at org.apache.hadoop.hbase.master.HMasterCommandLine$LocalHMaster.run(HMasterCommandLine.java:312)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-27 18:32:28,496 INFO  [M:0;192.168.1.124:53765] regionserver.HRegionServer: stopping server 192.168.1.124,53765,1453881563009; zookeeper connection closed.
+2016-01-27 18:32:28,496 INFO  [M:0;192.168.1.124:53765] regionserver.HRegionServer: M:0;192.168.1.124:53765 exiting
+2016-01-27 18:32:28,497 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: NIOServerCnxn factory exited run method
+2016-01-27 18:32:28,497 INFO  [M:0;192.168.1.124:53765] server.ZooKeeperServer: shutting down
+2016-01-27 18:32:28,497 INFO  [M:0;192.168.1.124:53765] server.SessionTrackerImpl: Shutting down
+2016-01-27 18:32:28,497 INFO  [M:0;192.168.1.124:53765] server.PrepRequestProcessor: Shutting down
+2016-01-27 18:32:28,497 INFO  [M:0;192.168.1.124:53765] server.SyncRequestProcessor: Shutting down
+2016-01-27 18:32:28,497 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: PrepRequestProcessor exited loop!
+2016-01-27 18:32:28,497 INFO  [SyncThread:0] server.SyncRequestProcessor: SyncRequestProcessor exited!
+2016-01-27 18:32:28,497 INFO  [M:0;192.168.1.124:53765] server.FinalRequestProcessor: shutdown of request processor complete
+2016-01-27 18:32:28,499 INFO  [M:0;192.168.1.124:53765] zookeeper.MiniZooKeeperCluster: Shutdown MiniZK cluster with all ZK servers
+2016-01-27 18:32:30,005 INFO  [SessionTracker] server.SessionTrackerImpl: SessionTrackerImpl exited loop!
+2016-01-27 18:32:34,913 WARN  [RS:0;192.168.1.124:53830] zookeeper.RecoverableZooKeeper: Possibly transient ZooKeeper, quorum=localhost:2181, exception=org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/rs/192.168.1.124,53830,1453881563658
+2016-01-27 18:32:34,913 ERROR [RS:0;192.168.1.124:53830] zookeeper.RecoverableZooKeeper: ZooKeeper delete failed after 4 attempts
+2016-01-27 18:32:34,913 WARN  [RS:0;192.168.1.124:53830] regionserver.HRegionServer: Failed deleting my ephemeral node
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase/rs/192.168.1.124,53830,1453881563658
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.delete(ZooKeeper.java:873)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.delete(RecoverableZooKeeper.java:178)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.deleteNode(ZKUtil.java:1345)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.deleteNode(ZKUtil.java:1334)
+	at org.apache.hadoop.hbase.regionserver.HRegionServer.deleteMyEphemeralNode(HRegionServer.java:1403)
+	at org.apache.hadoop.hbase.regionserver.HRegionServer.run(HRegionServer.java:1079)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-27 18:32:34,913 INFO  [RS:0;192.168.1.124:53830] regionserver.HRegionServer: stopping server 192.168.1.124,53830,1453881563658; zookeeper connection closed.
+2016-01-27 18:32:34,913 INFO  [RS:0;192.168.1.124:53830] regionserver.HRegionServer: RS:0;192.168.1.124:53830 exiting
+2016-01-27 18:32:34,915 INFO  [Thread-5] regionserver.ShutdownHook: Shutdown hook starting; hbase.shutdown.hook=true; fsShutdownHook=org.apache.hadoop.fs.FileSystem$Cache$ClientFinalizer@7354b8c5
+2016-01-27 18:32:34,915 INFO  [Thread-5] regionserver.ShutdownHook: Starting fs shutdown hook thread.
+2016-01-27 18:32:34,915 INFO  [Thread-5] regionserver.ShutdownHook: Shutdown hook finished.
