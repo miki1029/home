@@ -62,3 +62,6 @@
 /NCSDrive
 /hbase
 /apps/apache-tomcat-*/temp
+/apps/apache-tomcat-*/logs
+/apps/apache-tomcat-*/bin/server-time*.log
+
