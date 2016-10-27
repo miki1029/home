@@ -64,4 +64,6 @@
 /apps/apache-tomcat-*/temp
 /apps/apache-tomcat-*/logs
 /apps/apache-tomcat-*/bin/server-time*.log
-
+/apps/apache-tomcat-*/bin/*.log
+.CrossWeb
+java_error_in_idea_*.log
