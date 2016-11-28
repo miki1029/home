@@ -67,3 +67,8 @@
 /apps/apache-tomcat-*/bin/*.log
 .CrossWeb
 java_error_in_idea_*.log
+.ghc
+.putty
+.stack
+.local
+.python_history
