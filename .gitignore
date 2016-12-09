@@ -72,3 +72,5 @@ java_error_in_idea_*.log
 .stack
 .local
 .python_history
+.atlassian
+sourcetree.license
