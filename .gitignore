@@ -74,3 +74,5 @@ java_error_in_idea_*.log
 .python_history
 .atlassian
 sourcetree.license
+.cups
+.stCommitMsg
