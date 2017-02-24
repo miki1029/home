@@ -76,3 +76,4 @@ java_error_in_idea_*.log
 sourcetree.license
 .cups
 .stCommitMsg
+/temp
